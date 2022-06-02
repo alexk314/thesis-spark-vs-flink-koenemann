@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="174e09e0-672a-42f0-8dab-5a0f675dbff2" name="Changes" comment="corrected WordCount">
+      <change beforePath="$PROJECT_DIR$/../../Environments/SparkEnv/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../../Environments/SparkEnv/start.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bachelor_thesis/bachelor_thesis/thesis.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../../bachelor_thesis/bachelor_thesis/thesis.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bachelor_thesis/bachelor_thesis/thesis.fdb_latexmk" beforeDir="false" afterPath="$PROJECT_DIR$/../../bachelor_thesis/bachelor_thesis/thesis.fdb_latexmk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bachelor_thesis/bachelor_thesis/thesis.fls" beforeDir="false" afterPath="$PROJECT_DIR$/../../bachelor_thesis/bachelor_thesis/thesis.fls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bachelor_thesis/bachelor_thesis/thesis.ist" beforeDir="false" afterPath="$PROJECT_DIR$/../../bachelor_thesis/bachelor_thesis/thesis.ist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bachelor_thesis/bachelor_thesis/thesis.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../bachelor_thesis/bachelor_thesis/thesis.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bachelor_thesis/bachelor_thesis/thesis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../bachelor_thesis/bachelor_thesis/thesis.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bachelor_thesis/bachelor_thesis/thesis.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../../bachelor_thesis/bachelor_thesis/thesis.synctex.gz" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="26Eh2O0IQOSvPdHWQ8IrHLZyTQp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/iusearchbtw/0_Projects/nosql-project/twitter-app-frontend&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.WordCount">
+    <configuration name="WordCount" type="Application" factoryName="Application" temporary="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="WordCount" />
+      <module name="flink-word-count" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scala REPL" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="flink-word-count" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="javaOptions" value="-Djline.terminal=NONE" />
+      <option name="myConsoleArgs" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.WordCount" />
+        <item itemvalue="Scala REPL.Scala REPL" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="174e09e0-672a-42f0-8dab-5a0f675dbff2" name="Changes" comment="" />
+      <created>1646994447081</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646994447081</updated>
+      <workItem from="1646994448336" duration="3859000" />
+      <workItem from="1647605973862" duration="5796000" />
+      <workItem from="1647786145714" duration="4189000" />
+      <workItem from="1648885761033" duration="2372000" />
+      <workItem from="1648888157775" duration="3846000" />
+      <workItem from="1649853490821" duration="1812000" />
+      <workItem from="1652862689175" duration="2074000" />
+      <workItem from="1653047680291" duration="61000" />
+      <workItem from="1654076200200" duration="1012000" />
+      <workItem from="1654161271580" duration="602000" />
+      <workItem from="1654441958204" duration="3998000" />
+      <workItem from="1654505979113" duration="5256000" />
+      <workItem from="1654851930048" duration="3773000" />
+      <workItem from="1654871683708" duration="4333000" />
+      <workItem from="1654886359369" duration="1589000" />
+      <workItem from="1654888447325" duration="60000" />
+      <workItem from="1654890766476" duration="169000" />
+      <workItem from="1654891004132" duration="85000" />
+      <workItem from="1654934704418" duration="1152000" />
+      <workItem from="1655023616237" duration="124000" />
+      <workItem from="1655100018609" duration="2851000" />
+      <workItem from="1655113747724" duration="14000" />
+      <workItem from="1655282807323" duration="1160000" />
+      <workItem from="1655301579841" duration="18000" />
+      <workItem from="1655307445313" duration="600000" />
+      <workItem from="1655365614246" duration="5927000" />
+      <workItem from="1655456785340" duration="55000" />
+      <workItem from="1655718444011" duration="623000" />
+      <workItem from="1655740157331" duration="9000" />
+      <workItem from="1655881000528" duration="7933000" />
+      <workItem from="1655909716716" duration="3495000" />
+      <workItem from="1655976981096" duration="13000" />
+    </task>
+    <task id="LOCAL-00001" summary="Enhanced Word count">
+      <created>1646996391940</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1646996391941</updated>
+    </task>
+    <task id="LOCAL-00002" summary="corrected WordCount">
+      <created>1647013813026</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1647013813026</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Enhanced Word count" />
+    <MESSAGE value="corrected WordCount" />
+    <option name="LAST_COMMIT_MESSAGE" value="corrected WordCount" />
+  </component>
+</project>

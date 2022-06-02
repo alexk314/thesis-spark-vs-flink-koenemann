@@ -1,0 +1,23 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/iusearchbtw/0_Projects/ba-spark-koenemann/Development/FlinkWordCount/target/scala-2.12/flink-word-count_2.12-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WordCount$WordWithCount.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/iusearchbtw/0_Projects/ba-spark-koenemann/Development/FlinkWordCount/target/scala-2.12/classes/WordCount$WordWithCount.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WordCountBatch$$anon$1$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/iusearchbtw/0_Projects/ba-spark-koenemann/Development/FlinkWordCount/target/scala-2.12/classes/WordCountBatch$$anon$1$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WordCount$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/iusearchbtw/0_Projects/ba-spark-koenemann/Development/FlinkWordCount/target/scala-2.12/classes/WordCount$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WordCount$WordWithCount$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/iusearchbtw/0_Projects/ba-spark-koenemann/Development/FlinkWordCount/target/scala-2.12/classes/WordCount$WordWithCount$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WordCountBatch$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/iusearchbtw/0_Projects/ba-spark-koenemann/Development/FlinkWordCount/target/scala-2.12/classes/WordCountBatch$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WordCount$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/iusearchbtw/0_Projects/ba-spark-koenemann/Development/FlinkWordCount/target/scala-2.12/classes/WordCount$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WordCount$$anon$1$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/iusearchbtw/0_Projects/ba-spark-koenemann/Development/FlinkWordCount/target/scala-2.12/classes/WordCount$$anon$1$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WordCountBatch.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/iusearchbtw/0_Projects/ba-spark-koenemann/Development/FlinkWordCount/target/scala-2.12/classes/WordCountBatch.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WordCountBatch$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/iusearchbtw/0_Projects/ba-spark-koenemann/Development/FlinkWordCount/target/scala-2.12/classes/WordCountBatch$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WordCount.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/iusearchbtw/0_Projects/ba-spark-koenemann/Development/FlinkWordCount/target/scala-2.12/classes/WordCount.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

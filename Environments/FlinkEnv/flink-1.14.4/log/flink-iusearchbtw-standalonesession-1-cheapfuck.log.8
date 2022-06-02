@@ -1,0 +1,118 @@
+2022-04-02 11:13:54,415 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - --------------------------------------------------------------------------------
+2022-04-02 11:13:54,417 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  Preconfiguration: 
+2022-04-02 11:13:54,417 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - 
+
+
+RESOURCE_PARAMS extraction logs:
+jvm_params: -Xmx9034530801 -Xms9034530801 -XX:MaxMetaspaceSize=268435456
+dynamic_configs: -D jobmanager.memory.off-heap.size=134217728b -D jobmanager.memory.jvm-overhead.min=1048576015b -D jobmanager.memory.jvm-metaspace.size=268435456b -D jobmanager.memory.heap.size=9034530801b -D jobmanager.memory.jvm-overhead.max=1048576015b
+logs: WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+INFO  [] - Loading configuration property: jobmanager.rpc.address, 192.168.178.56
+INFO  [] - Loading configuration property: jobmanager.rpc.port, 6123
+INFO  [] - Loading configuration property: jobmanager.memory.process.size, 10000m
+INFO  [] - Loading configuration property: taskmanager.memory.process.size, 1728m
+INFO  [] - Loading configuration property: taskmanager.numberOfTaskSlots, 1
+INFO  [] - Loading configuration property: parallelism.default, 1
+INFO  [] - Loading configuration property: jobmanager.execution.failover-strategy, region
+INFO  [] - Final Master Memory configuration:
+INFO  [] -   Total Process Memory: 9.766gb (10485760000 bytes)
+INFO  [] -     Total Flink Memory: 8.539gb (9168748529 bytes)
+INFO  [] -       JVM Heap:         8.414gb (9034530801 bytes)
+INFO  [] -       Off-heap:         128.000mb (134217728 bytes)
+INFO  [] -     JVM Metaspace:      256.000mb (268435456 bytes)
+INFO  [] -     JVM Overhead:       1000.000mb (1048576015 bytes)
+
+2022-04-02 11:13:54,417 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - --------------------------------------------------------------------------------
+2022-04-02 11:13:54,417 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  Starting StandaloneSessionClusterEntrypoint (Version: 1.14.4, Scala: 2.12, Rev:895c609, Date:2022-02-25T11:57:14+01:00)
+2022-04-02 11:13:54,417 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  OS current user: iusearchbtw
+2022-04-02 11:13:54,417 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  Current Hadoop/Kerberos user: <no hadoop dependency found>
+2022-04-02 11:13:54,417 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  JVM: OpenJDK 64-Bit Server VM - Oracle Corporation - 11/11.0.15+3
+2022-04-02 11:13:54,417 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  Maximum heap size: 8616 MiBytes
+2022-04-02 11:13:54,418 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  JAVA_HOME: /usr/lib/jvm/java-15-openjdk
+2022-04-02 11:13:54,418 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  No Hadoop Dependency available
+2022-04-02 11:13:54,418 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  JVM Options:
+2022-04-02 11:13:54,418 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -Xmx9034530801
+2022-04-02 11:13:54,418 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -Xms9034530801
+2022-04-02 11:13:54,418 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -XX:MaxMetaspaceSize=268435456
+2022-04-02 11:13:54,418 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -Dlog.file=/home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/log/flink-iusearchbtw-standalonesession-1-cheapfuck.log
+2022-04-02 11:13:54,418 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -Dlog4j.configuration=file:/home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/conf/log4j.properties
+2022-04-02 11:13:54,418 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -Dlog4j.configurationFile=file:/home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/conf/log4j.properties
+2022-04-02 11:13:54,418 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -Dlogback.configurationFile=file:/home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/conf/logback.xml
+2022-04-02 11:13:54,418 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  Program Arguments:
+2022-04-02 11:13:54,419 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     --configDir
+2022-04-02 11:13:54,419 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     /home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/conf
+2022-04-02 11:13:54,419 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     --executionMode
+2022-04-02 11:13:54,420 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     cluster
+2022-04-02 11:13:54,420 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -D
+2022-04-02 11:13:54,420 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     jobmanager.memory.off-heap.size=134217728b
+2022-04-02 11:13:54,420 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -D
+2022-04-02 11:13:54,420 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     jobmanager.memory.jvm-overhead.min=1048576015b
+2022-04-02 11:13:54,420 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -D
+2022-04-02 11:13:54,420 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     jobmanager.memory.jvm-metaspace.size=268435456b
+2022-04-02 11:13:54,420 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -D
+2022-04-02 11:13:54,420 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     jobmanager.memory.heap.size=9034530801b
+2022-04-02 11:13:54,420 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -D
+2022-04-02 11:13:54,420 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     jobmanager.memory.jvm-overhead.max=1048576015b
+2022-04-02 11:13:54,421 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  Classpath: /home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/lib/flink-csv-1.14.4.jar:/home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/lib/flink-json-1.14.4.jar:/home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/lib/flink-shaded-zookeeper-3.4.14.jar:/home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/lib/flink-table_2.12-1.14.4.jar:/home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/lib/log4j-1.2-api-2.17.1.jar:/home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/lib/log4j-api-2.17.1.jar:/home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/lib/log4j-core-2.17.1.jar:/home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/lib/log4j-slf4j-impl-2.17.1.jar:/home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/lib/flink-dist_2.12-1.14.4.jar:::
+2022-04-02 11:13:54,421 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - --------------------------------------------------------------------------------
+2022-04-02 11:13:54,422 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - Registered UNIX signal handlers for [TERM, HUP, INT]
+2022-04-02 11:13:54,435 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: jobmanager.rpc.address, 192.168.178.56
+2022-04-02 11:13:54,435 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: jobmanager.rpc.port, 6123
+2022-04-02 11:13:54,435 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: jobmanager.memory.process.size, 10000m
+2022-04-02 11:13:54,435 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: taskmanager.memory.process.size, 1728m
+2022-04-02 11:13:54,435 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: taskmanager.numberOfTaskSlots, 1
+2022-04-02 11:13:54,436 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: parallelism.default, 1
+2022-04-02 11:13:54,436 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: jobmanager.execution.failover-strategy, region
+2022-04-02 11:13:54,462 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - Starting StandaloneSessionClusterEntrypoint.
+2022-04-02 11:13:54,507 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - Install default filesystem.
+2022-04-02 11:13:54,510 INFO  org.apache.flink.core.fs.FileSystem                          [] - Hadoop is not in the classpath/dependencies. The extended set of supported File Systems via Hadoop is not available.
+2022-04-02 11:13:54,549 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - Install security context.
+2022-04-02 11:13:54,561 INFO  org.apache.flink.runtime.security.modules.HadoopModuleFactory [] - Cannot create Hadoop Security Module because Hadoop cannot be found in the Classpath.
+2022-04-02 11:13:54,567 INFO  org.apache.flink.runtime.security.modules.JaasModule         [] - Jaas file will be created as /tmp/jaas-16045595181043741904.conf.
+2022-04-02 11:13:54,602 INFO  org.apache.flink.runtime.security.contexts.HadoopSecurityContextFactory [] - Cannot install HadoopSecurityContext because Hadoop cannot be found in the Classpath.
+2022-04-02 11:13:54,605 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - Initializing cluster services.
+2022-04-02 11:13:54,914 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcServiceUtils        [] - Trying to start actor system, external address 192.168.178.56:6123, bind address 0.0.0.0:6123.
+2022-04-02 11:13:55,774 INFO  akka.event.slf4j.Slf4jLogger                                 [] - Slf4jLogger started
+2022-04-02 11:13:55,812 INFO  akka.remote.RemoteActorRefProvider                           [] - Akka Cluster not in use - enabling unsafe features anyway because `akka.remote.use-unsafe-remote-features-outside-cluster` has been enabled.
+2022-04-02 11:13:55,813 INFO  akka.remote.Remoting                                         [] - Starting remoting
+2022-04-02 11:13:55,986 INFO  akka.remote.Remoting                                         [] - Remoting started; listening on addresses :[akka.tcp://flink@192.168.178.56:6123]
+2022-04-02 11:13:56,120 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcServiceUtils        [] - Actor system started at akka.tcp://flink@192.168.178.56:6123
+2022-04-02 11:13:56,148 INFO  org.apache.flink.configuration.Configuration                 [] - Config uses fallback configuration key 'jobmanager.rpc.address' instead of key 'rest.address'
+2022-04-02 11:13:56,155 INFO  org.apache.flink.runtime.blob.BlobServer                     [] - Created BLOB server storage directory /tmp/blobStore-4c78c108-21c1-47b9-992b-1110fc367bbd
+2022-04-02 11:13:56,158 INFO  org.apache.flink.runtime.blob.BlobServer                     [] - Started BLOB server at 0.0.0.0:36901 - max concurrent requests: 50 - max backlog: 1000
+2022-04-02 11:13:56,168 INFO  org.apache.flink.runtime.metrics.MetricRegistryImpl          [] - No metrics reporter configured, no metrics will be exposed/reported.
+2022-04-02 11:13:56,173 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcServiceUtils        [] - Trying to start actor system, external address 192.168.178.56:0, bind address 0.0.0.0:0.
+2022-04-02 11:13:56,199 INFO  akka.event.slf4j.Slf4jLogger                                 [] - Slf4jLogger started
+2022-04-02 11:13:56,205 INFO  akka.remote.RemoteActorRefProvider                           [] - Akka Cluster not in use - enabling unsafe features anyway because `akka.remote.use-unsafe-remote-features-outside-cluster` has been enabled.
+2022-04-02 11:13:56,206 INFO  akka.remote.Remoting                                         [] - Starting remoting
+2022-04-02 11:13:56,220 INFO  akka.remote.Remoting                                         [] - Remoting started; listening on addresses :[akka.tcp://flink-metrics@192.168.178.56:45073]
+2022-04-02 11:13:56,235 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcServiceUtils        [] - Actor system started at akka.tcp://flink-metrics@192.168.178.56:45073
+2022-04-02 11:13:56,256 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService             [] - Starting RPC endpoint for org.apache.flink.runtime.metrics.dump.MetricQueryService at akka://flink-metrics/user/rpc/MetricQueryService .
+2022-04-02 11:13:56,283 INFO  org.apache.flink.runtime.dispatcher.FileExecutionGraphInfoStore [] - Initializing FileExecutionGraphInfoStore: Storage directory /tmp/executionGraphStore-835f20f3-6368-491b-83b0-8583c48a3320, expiration time 3600000, maximum cache size 52428800 bytes.
+2022-04-02 11:13:56,339 INFO  org.apache.flink.configuration.Configuration                 [] - Config uses fallback configuration key 'jobmanager.rpc.address' instead of key 'rest.address'
+2022-04-02 11:13:56,339 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - Upload directory /tmp/flink-web-d2440dcf-0462-4f3b-bf4e-b31ac0ae3b29/flink-web-upload does not exist. 
+2022-04-02 11:13:56,340 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - Created directory /tmp/flink-web-d2440dcf-0462-4f3b-bf4e-b31ac0ae3b29/flink-web-upload for file uploads.
+2022-04-02 11:13:56,343 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - Starting rest endpoint.
+2022-04-02 11:13:56,636 INFO  org.apache.flink.runtime.webmonitor.WebMonitorUtils          [] - Determined location of main cluster component log file: /home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/log/flink-iusearchbtw-standalonesession-1-cheapfuck.log
+2022-04-02 11:13:56,636 INFO  org.apache.flink.runtime.webmonitor.WebMonitorUtils          [] - Determined location of main cluster component stdout file: /home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/log/flink-iusearchbtw-standalonesession-1-cheapfuck.out
+2022-04-02 11:13:56,794 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - Rest endpoint listening at 192.168.178.56:8081
+2022-04-02 11:13:56,796 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - http://192.168.178.56:8081 was granted leadership with leaderSessionID=00000000-0000-0000-0000-000000000000
+2022-04-02 11:13:56,797 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - Web frontend listening at http://192.168.178.56:8081.
+2022-04-02 11:13:56,829 INFO  org.apache.flink.runtime.dispatcher.runner.DefaultDispatcherRunner [] - DefaultDispatcherRunner was granted leadership with leader id 00000000-0000-0000-0000-000000000000. Creating new DispatcherLeaderProcess.
+2022-04-02 11:13:56,837 INFO  org.apache.flink.runtime.dispatcher.runner.SessionDispatcherLeaderProcess [] - Start SessionDispatcherLeaderProcess.
+2022-04-02 11:13:56,839 INFO  org.apache.flink.runtime.resourcemanager.ResourceManagerServiceImpl [] - Starting resource manager service.
+2022-04-02 11:13:56,839 INFO  org.apache.flink.runtime.dispatcher.runner.SessionDispatcherLeaderProcess [] - Recover all persisted job graphs.
+2022-04-02 11:13:56,839 INFO  org.apache.flink.runtime.dispatcher.runner.SessionDispatcherLeaderProcess [] - Successfully recovered 0 persisted job graphs.
+2022-04-02 11:13:56,852 INFO  org.apache.flink.runtime.resourcemanager.ResourceManagerServiceImpl [] - Resource manager service is granted leadership with session id 00000000-0000-0000-0000-000000000000.
+2022-04-02 11:13:56,857 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService             [] - Starting RPC endpoint for org.apache.flink.runtime.dispatcher.StandaloneDispatcher at akka://flink/user/rpc/dispatcher_0 .
+2022-04-02 11:13:56,897 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService             [] - Starting RPC endpoint for org.apache.flink.runtime.resourcemanager.StandaloneResourceManager at akka://flink/user/rpc/resourcemanager_1 .
+2022-04-02 11:13:56,908 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Starting the resource manager.
+2022-04-02 11:14:02,192 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - RECEIVED SIGNAL 15: SIGTERM. Shutting down as requested.
+2022-04-02 11:14:02,193 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - Shutting StandaloneSessionClusterEntrypoint down with application status UNKNOWN. Diagnostics Cluster entrypoint has been closed externally..
+2022-04-02 11:14:02,196 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - Shutting down rest endpoint.
+2022-04-02 11:14:02,197 INFO  org.apache.flink.runtime.blob.BlobServer                     [] - Stopped BLOB server at 0.0.0.0:36901
+2022-04-02 11:14:02,311 INFO  akka.remote.RemoteActorRefProvider$RemotingTerminator        [] - Shutting down remote daemon.
+2022-04-02 11:14:02,313 INFO  akka.remote.RemoteActorRefProvider$RemotingTerminator        [] - Remote daemon shut down; proceeding with flushing remote transports.
+2022-04-02 11:14:02,330 INFO  akka.remote.RemoteActorRefProvider$RemotingTerminator        [] - Shutting down remote daemon.
+2022-04-02 11:14:02,332 INFO  akka.remote.RemoteActorRefProvider$RemotingTerminator        [] - Remote daemon shut down; proceeding with flushing remote transports.
+2022-04-02 11:14:02,351 INFO  akka.remote.RemoteActorRefProvider$RemotingTerminator        [] - Remoting shut down.

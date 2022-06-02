@@ -1,0 +1,1051 @@
+2022-06-05 17:45:26,112 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - --------------------------------------------------------------------------------
+2022-06-05 17:45:26,115 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  Preconfiguration: 
+2022-06-05 17:45:26,115 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - 
+
+
+RESOURCE_PARAMS extraction logs:
+jvm_params: -Xmx9034530801 -Xms9034530801 -XX:MaxMetaspaceSize=268435456
+dynamic_configs: -D jobmanager.memory.off-heap.size=134217728b -D jobmanager.memory.jvm-overhead.min=1048576015b -D jobmanager.memory.jvm-metaspace.size=268435456b -D jobmanager.memory.heap.size=9034530801b -D jobmanager.memory.jvm-overhead.max=1048576015b
+logs: WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+INFO  [] - Loading configuration property: jobmanager.rpc.address, 192.168.178.56
+INFO  [] - Loading configuration property: jobmanager.rpc.port, 6123
+INFO  [] - Loading configuration property: jobmanager.memory.process.size, 10000m
+INFO  [] - Loading configuration property: taskmanager.memory.process.size, 1728m
+INFO  [] - Loading configuration property: taskmanager.numberOfTaskSlots, 1
+INFO  [] - Loading configuration property: parallelism.default, 3
+INFO  [] - Loading configuration property: jobmanager.execution.failover-strategy, region
+INFO  [] - Final Master Memory configuration:
+INFO  [] -   Total Process Memory: 9.766gb (10485760000 bytes)
+INFO  [] -     Total Flink Memory: 8.539gb (9168748529 bytes)
+INFO  [] -       JVM Heap:         8.414gb (9034530801 bytes)
+INFO  [] -       Off-heap:         128.000mb (134217728 bytes)
+INFO  [] -     JVM Metaspace:      256.000mb (268435456 bytes)
+INFO  [] -     JVM Overhead:       1000.000mb (1048576015 bytes)
+
+2022-06-05 17:45:26,115 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - --------------------------------------------------------------------------------
+2022-06-05 17:45:26,115 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  Starting StandaloneSessionClusterEntrypoint (Version: 1.14.4, Scala: 2.12, Rev:895c609, Date:2022-02-25T11:57:14+01:00)
+2022-06-05 17:45:26,115 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  OS current user: iusearchbtw
+2022-06-05 17:45:26,116 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  Current Hadoop/Kerberos user: <no hadoop dependency found>
+2022-06-05 17:45:26,116 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  JVM: OpenJDK 64-Bit Server VM - Oracle Corporation - 11/11.0.15+10
+2022-06-05 17:45:26,116 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  Maximum heap size: 8616 MiBytes
+2022-06-05 17:45:26,116 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  JAVA_HOME: /usr/lib/jvm/java-15-openjdk
+2022-06-05 17:45:26,116 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  No Hadoop Dependency available
+2022-06-05 17:45:26,116 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  JVM Options:
+2022-06-05 17:45:26,116 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -Xmx9034530801
+2022-06-05 17:45:26,116 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -Xms9034530801
+2022-06-05 17:45:26,117 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -XX:MaxMetaspaceSize=268435456
+2022-06-05 17:45:26,117 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -Dlog.file=/home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/log/flink-iusearchbtw-standalonesession-0-cheapfuck.log
+2022-06-05 17:45:26,117 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -Dlog4j.configuration=file:/home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/conf/log4j-console.properties
+2022-06-05 17:45:26,117 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -Dlog4j.configurationFile=file:/home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/conf/log4j-console.properties
+2022-06-05 17:45:26,117 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -Dlogback.configurationFile=file:/home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/conf/logback-console.xml
+2022-06-05 17:45:26,117 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  Program Arguments:
+2022-06-05 17:45:26,118 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     --configDir
+2022-06-05 17:45:26,118 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     /home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/conf
+2022-06-05 17:45:26,119 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     --executionMode
+2022-06-05 17:45:26,119 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     cluster
+2022-06-05 17:45:26,119 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -D
+2022-06-05 17:45:26,119 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     jobmanager.memory.off-heap.size=134217728b
+2022-06-05 17:45:26,119 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -D
+2022-06-05 17:45:26,119 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     jobmanager.memory.jvm-overhead.min=1048576015b
+2022-06-05 17:45:26,119 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -D
+2022-06-05 17:45:26,119 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     jobmanager.memory.jvm-metaspace.size=268435456b
+2022-06-05 17:45:26,120 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -D
+2022-06-05 17:45:26,120 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     jobmanager.memory.heap.size=9034530801b
+2022-06-05 17:45:26,120 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -D
+2022-06-05 17:45:26,120 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     jobmanager.memory.jvm-overhead.max=1048576015b
+2022-06-05 17:45:26,120 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  Classpath: /home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/lib/flink-csv-1.14.4.jar:/home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/lib/flink-json-1.14.4.jar:/home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/lib/flink-shaded-zookeeper-3.4.14.jar:/home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/lib/flink-table_2.12-1.14.4.jar:/home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/lib/log4j-1.2-api-2.17.1.jar:/home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/lib/log4j-api-2.17.1.jar:/home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/lib/log4j-core-2.17.1.jar:/home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/lib/log4j-slf4j-impl-2.17.1.jar:/home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/lib/flink-dist_2.12-1.14.4.jar:::
+2022-06-05 17:45:26,120 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - --------------------------------------------------------------------------------
+2022-06-05 17:45:26,121 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - Registered UNIX signal handlers for [TERM, HUP, INT]
+2022-06-05 17:45:26,134 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: jobmanager.rpc.address, 192.168.178.56
+2022-06-05 17:45:26,134 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: jobmanager.rpc.port, 6123
+2022-06-05 17:45:26,134 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: jobmanager.memory.process.size, 10000m
+2022-06-05 17:45:26,135 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: taskmanager.memory.process.size, 1728m
+2022-06-05 17:45:26,135 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: taskmanager.numberOfTaskSlots, 1
+2022-06-05 17:45:26,135 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: parallelism.default, 3
+2022-06-05 17:45:26,135 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: jobmanager.execution.failover-strategy, region
+2022-06-05 17:45:26,163 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - Starting StandaloneSessionClusterEntrypoint.
+2022-06-05 17:45:26,204 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - Install default filesystem.
+2022-06-05 17:45:26,207 INFO  org.apache.flink.core.fs.FileSystem                          [] - Hadoop is not in the classpath/dependencies. The extended set of supported File Systems via Hadoop is not available.
+2022-06-05 17:45:26,242 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - Install security context.
+2022-06-05 17:45:26,270 INFO  org.apache.flink.runtime.security.modules.HadoopModuleFactory [] - Cannot create Hadoop Security Module because Hadoop cannot be found in the Classpath.
+2022-06-05 17:45:26,285 INFO  org.apache.flink.runtime.security.modules.JaasModule         [] - Jaas file will be created as /tmp/jaas-3252696260269659699.conf.
+2022-06-05 17:45:26,302 INFO  org.apache.flink.runtime.security.contexts.HadoopSecurityContextFactory [] - Cannot install HadoopSecurityContext because Hadoop cannot be found in the Classpath.
+2022-06-05 17:45:26,306 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - Initializing cluster services.
+2022-06-05 17:45:26,643 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcServiceUtils        [] - Trying to start actor system, external address 192.168.178.56:6123, bind address 0.0.0.0:6123.
+2022-06-05 17:45:27,484 INFO  akka.event.slf4j.Slf4jLogger                                 [] - Slf4jLogger started
+2022-06-05 17:45:27,521 INFO  akka.remote.RemoteActorRefProvider                           [] - Akka Cluster not in use - enabling unsafe features anyway because `akka.remote.use-unsafe-remote-features-outside-cluster` has been enabled.
+2022-06-05 17:45:27,522 INFO  akka.remote.Remoting                                         [] - Starting remoting
+2022-06-05 17:45:27,718 INFO  akka.remote.Remoting                                         [] - Remoting started; listening on addresses :[akka.tcp://flink@192.168.178.56:6123]
+2022-06-05 17:45:27,850 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcServiceUtils        [] - Actor system started at akka.tcp://flink@192.168.178.56:6123
+2022-06-05 17:45:27,883 INFO  org.apache.flink.configuration.Configuration                 [] - Config uses fallback configuration key 'jobmanager.rpc.address' instead of key 'rest.address'
+2022-06-05 17:45:27,891 INFO  org.apache.flink.runtime.blob.BlobServer                     [] - Created BLOB server storage directory /tmp/blobStore-3764b7cb-edf6-4910-b001-9bd810d6abf6
+2022-06-05 17:45:27,894 INFO  org.apache.flink.runtime.blob.BlobServer                     [] - Started BLOB server at 0.0.0.0:33221 - max concurrent requests: 50 - max backlog: 1000
+2022-06-05 17:45:27,907 INFO  org.apache.flink.runtime.metrics.MetricRegistryImpl          [] - No metrics reporter configured, no metrics will be exposed/reported.
+2022-06-05 17:45:27,912 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcServiceUtils        [] - Trying to start actor system, external address 192.168.178.56:0, bind address 0.0.0.0:0.
+2022-06-05 17:45:27,946 INFO  akka.event.slf4j.Slf4jLogger                                 [] - Slf4jLogger started
+2022-06-05 17:45:27,953 INFO  akka.remote.RemoteActorRefProvider                           [] - Akka Cluster not in use - enabling unsafe features anyway because `akka.remote.use-unsafe-remote-features-outside-cluster` has been enabled.
+2022-06-05 17:45:27,956 INFO  akka.remote.Remoting                                         [] - Starting remoting
+2022-06-05 17:45:27,973 INFO  akka.remote.Remoting                                         [] - Remoting started; listening on addresses :[akka.tcp://flink-metrics@192.168.178.56:45441]
+2022-06-05 17:45:27,993 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcServiceUtils        [] - Actor system started at akka.tcp://flink-metrics@192.168.178.56:45441
+2022-06-05 17:45:28,019 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService             [] - Starting RPC endpoint for org.apache.flink.runtime.metrics.dump.MetricQueryService at akka://flink-metrics/user/rpc/MetricQueryService .
+2022-06-05 17:45:28,051 INFO  org.apache.flink.runtime.dispatcher.FileExecutionGraphInfoStore [] - Initializing FileExecutionGraphInfoStore: Storage directory /tmp/executionGraphStore-58b6c50a-c3fd-4fc1-bc30-12ac036fbb79, expiration time 3600000, maximum cache size 52428800 bytes.
+2022-06-05 17:45:28,101 INFO  org.apache.flink.configuration.Configuration                 [] - Config uses fallback configuration key 'jobmanager.rpc.address' instead of key 'rest.address'
+2022-06-05 17:45:28,102 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - Upload directory /tmp/flink-web-3126ce51-d131-4010-8808-1eaa9ee4e3ad/flink-web-upload does not exist. 
+2022-06-05 17:45:28,102 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - Created directory /tmp/flink-web-3126ce51-d131-4010-8808-1eaa9ee4e3ad/flink-web-upload for file uploads.
+2022-06-05 17:45:28,105 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - Starting rest endpoint.
+2022-06-05 17:45:28,389 INFO  org.apache.flink.runtime.webmonitor.WebMonitorUtils          [] - Determined location of main cluster component log file: /home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/log/flink-iusearchbtw-standalonesession-0-cheapfuck.log
+2022-06-05 17:45:28,389 INFO  org.apache.flink.runtime.webmonitor.WebMonitorUtils          [] - Determined location of main cluster component stdout file: /home/iusearchbtw/0_Projects/ba-spark-koenemann/Environments/FlinkEnv/flink-1.14.4/log/flink-iusearchbtw-standalonesession-0-cheapfuck.out
+2022-06-05 17:45:28,554 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - Rest endpoint listening at 192.168.178.56:8081
+2022-06-05 17:45:28,556 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - http://192.168.178.56:8081 was granted leadership with leaderSessionID=00000000-0000-0000-0000-000000000000
+2022-06-05 17:45:28,557 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - Web frontend listening at http://192.168.178.56:8081.
+2022-06-05 17:45:28,589 INFO  org.apache.flink.runtime.dispatcher.runner.DefaultDispatcherRunner [] - DefaultDispatcherRunner was granted leadership with leader id 00000000-0000-0000-0000-000000000000. Creating new DispatcherLeaderProcess.
+2022-06-05 17:45:28,597 INFO  org.apache.flink.runtime.dispatcher.runner.SessionDispatcherLeaderProcess [] - Start SessionDispatcherLeaderProcess.
+2022-06-05 17:45:28,599 INFO  org.apache.flink.runtime.resourcemanager.ResourceManagerServiceImpl [] - Starting resource manager service.
+2022-06-05 17:45:28,599 INFO  org.apache.flink.runtime.dispatcher.runner.SessionDispatcherLeaderProcess [] - Recover all persisted job graphs.
+2022-06-05 17:45:28,602 INFO  org.apache.flink.runtime.dispatcher.runner.SessionDispatcherLeaderProcess [] - Successfully recovered 0 persisted job graphs.
+2022-06-05 17:45:28,614 INFO  org.apache.flink.runtime.resourcemanager.ResourceManagerServiceImpl [] - Resource manager service is granted leadership with session id 00000000-0000-0000-0000-000000000000.
+2022-06-05 17:45:28,627 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService             [] - Starting RPC endpoint for org.apache.flink.runtime.dispatcher.StandaloneDispatcher at akka://flink/user/rpc/dispatcher_0 .
+2022-06-05 17:45:28,643 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService             [] - Starting RPC endpoint for org.apache.flink.runtime.resourcemanager.StandaloneResourceManager at akka://flink/user/rpc/resourcemanager_1 .
+2022-06-05 17:45:28,667 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Starting the resource manager.
+2022-06-05 17:45:38,570 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registering TaskManager with ResourceID 192.168.178.57:33449-46080e (akka.tcp://flink@192.168.178.57:33449/user/rpc/taskmanager_0) at ResourceManager
+2022-06-05 17:45:38,774 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registering TaskManager with ResourceID 192.168.178.57:33449-46080e (akka.tcp://flink@192.168.178.57:33449/user/rpc/taskmanager_0) at ResourceManager
+2022-06-05 17:46:10,466 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registering TaskManager with ResourceID 192.168.178.55:40083-855cea (akka.tcp://flink@192.168.178.55:40083/user/rpc/taskmanager_0) at ResourceManager
+2022-06-05 17:46:19,957 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registering TaskManager with ResourceID 192.168.178.58:36731-ed0f0d (akka.tcp://flink@192.168.178.58:36731/user/rpc/taskmanager_0) at ResourceManager
+2022-06-05 17:46:24,079 ERROR org.apache.flink.runtime.rest.handler.job.JobDetailsHandler  [] - Exception occurred in REST handler: Job 26ed06a7b52937a2221eb1c8d22f2b64 not found
+2022-06-05 17:46:24,142 ERROR org.apache.flink.runtime.rest.handler.job.JobExceptionsHandler [] - Exception occurred in REST handler: Job 26ed06a7b52937a2221eb1c8d22f2b64 not found
+2022-06-05 17:46:26,233 ERROR org.apache.flink.runtime.rest.handler.job.JobDetailsHandler  [] - Exception occurred in REST handler: Job 26ed06a7b52937a2221eb1c8d22f2b64 not found
+2022-06-05 17:46:26,275 ERROR org.apache.flink.runtime.rest.handler.job.JobExceptionsHandler [] - Exception occurred in REST handler: Job 26ed06a7b52937a2221eb1c8d22f2b64 not found
+2022-06-05 17:46:49,267 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Received JobGraph submission 'StreamWordCount' (dabac4f73cbfb44ad63ce14039cff21d).
+2022-06-05 17:46:49,268 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Submitting job 'StreamWordCount' (dabac4f73cbfb44ad63ce14039cff21d).
+2022-06-05 17:46:49,298 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService             [] - Starting RPC endpoint for org.apache.flink.runtime.jobmaster.JobMaster at akka://flink/user/rpc/jobmanager_2 .
+2022-06-05 17:46:49,309 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Initializing job 'StreamWordCount' (dabac4f73cbfb44ad63ce14039cff21d).
+2022-06-05 17:46:49,341 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Using restart back off time strategy NoRestartBackoffTimeStrategy for StreamWordCount (dabac4f73cbfb44ad63ce14039cff21d).
+2022-06-05 17:46:49,387 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Running initialization on master for job StreamWordCount (dabac4f73cbfb44ad63ce14039cff21d).
+2022-06-05 17:46:49,387 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Successfully ran initialization on master in 0 ms.
+2022-06-05 17:46:49,418 INFO  org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology [] - Built 1 pipelined regions in 0 ms
+2022-06-05 17:46:49,457 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - No state backend has been configured, using default (HashMap) org.apache.flink.runtime.state.hashmap.HashMapStateBackend@7c2a336
+2022-06-05 17:46:49,458 INFO  org.apache.flink.runtime.state.StateBackendLoader            [] - State backend loader loads the state backend as HashMapStateBackend
+2022-06-05 17:46:49,459 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Checkpoint storage is set to 'jobmanager'
+2022-06-05 17:46:49,483 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - No checkpoint found during restore.
+2022-06-05 17:46:49,490 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Using failover strategy org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionFailoverStrategy@7cb2e735 for StreamWordCount (dabac4f73cbfb44ad63ce14039cff21d).
+2022-06-05 17:46:49,505 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Starting execution of job 'StreamWordCount' (dabac4f73cbfb44ad63ce14039cff21d) under job master id 00000000000000000000000000000000.
+2022-06-05 17:46:49,507 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Starting scheduling with scheduling strategy [org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy]
+2022-06-05 17:46:49,508 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job StreamWordCount (dabac4f73cbfb44ad63ce14039cff21d) switched from state CREATED to RUNNING.
+2022-06-05 17:46:49,512 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (a65c30fa12a0674c049e736785cf8af7) switched from CREATED to SCHEDULED.
+2022-06-05 17:46:49,512 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (4b813f3abcab153572383171bab68273) switched from CREATED to SCHEDULED.
+2022-06-05 17:46:49,512 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (0b8b9759ddb45b1558748591bc6e284f) switched from CREATED to SCHEDULED.
+2022-06-05 17:46:49,512 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (6b24ab43d2345c6f9ef7ec25e133a82e) switched from CREATED to SCHEDULED.
+2022-06-05 17:46:49,513 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (886cb0346b75e5bc9c55f651d9fd239e) switched from CREATED to SCHEDULED.
+2022-06-05 17:46:49,513 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (87bb1f3222b3bca1378b282772219f68) switched from CREATED to SCHEDULED.
+2022-06-05 17:46:49,513 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (aec839dc53be3f6344b415017101f22a) switched from CREATED to SCHEDULED.
+2022-06-05 17:46:49,535 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Connecting to ResourceManager akka.tcp://flink@192.168.178.56:6123/user/rpc/resourcemanager_*(00000000000000000000000000000000)
+2022-06-05 17:46:49,543 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Resolved ResourceManager address, beginning registration
+2022-06-05 17:46:49,545 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registering job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_2 for job dabac4f73cbfb44ad63ce14039cff21d.
+2022-06-05 17:46:49,552 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registered job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_2 for job dabac4f73cbfb44ad63ce14039cff21d.
+2022-06-05 17:46:49,556 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - JobManager successfully registered at ResourceManager, leader id: 00000000000000000000000000000000.
+2022-06-05 17:46:49,558 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job dabac4f73cbfb44ad63ce14039cff21d: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=3}]
+2022-06-05 17:46:49,830 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (a65c30fa12a0674c049e736785cf8af7) switched from SCHEDULED to DEPLOYING.
+2022-06-05 17:46:49,831 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Socket Stream (1/1) (attempt #0) with attempt id a65c30fa12a0674c049e736785cf8af7 to 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453) with allocation id 952cf4a646a7a397a6cea019eef2b52f
+2022-06-05 17:46:49,837 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (4b813f3abcab153572383171bab68273) switched from SCHEDULED to DEPLOYING.
+2022-06-05 17:46:49,838 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (1/3) (attempt #0) with attempt id 4b813f3abcab153572383171bab68273 to 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453) with allocation id 952cf4a646a7a397a6cea019eef2b52f
+2022-06-05 17:46:49,850 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (0b8b9759ddb45b1558748591bc6e284f) switched from SCHEDULED to DEPLOYING.
+2022-06-05 17:46:49,856 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (2/3) (attempt #0) with attempt id 0b8b9759ddb45b1558748591bc6e284f to 192.168.178.58:36731-ed0f0d @ Pi4.fritz.box (dataPort=37637) with allocation id dbd86abbec98478d14c1fc74993b4040
+2022-06-05 17:46:49,857 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (6b24ab43d2345c6f9ef7ec25e133a82e) switched from SCHEDULED to DEPLOYING.
+2022-06-05 17:46:49,863 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (3/3) (attempt #0) with attempt id 6b24ab43d2345c6f9ef7ec25e133a82e to 192.168.178.55:40083-855cea @ Pi3.fritz.box (dataPort=38663) with allocation id c9bc19527713398326d5e01ebf852392
+2022-06-05 17:46:49,863 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (886cb0346b75e5bc9c55f651d9fd239e) switched from SCHEDULED to DEPLOYING.
+2022-06-05 17:46:49,863 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (1/3) (attempt #0) with attempt id 886cb0346b75e5bc9c55f651d9fd239e to 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453) with allocation id 952cf4a646a7a397a6cea019eef2b52f
+2022-06-05 17:46:49,865 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (87bb1f3222b3bca1378b282772219f68) switched from SCHEDULED to DEPLOYING.
+2022-06-05 17:46:49,865 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (2/3) (attempt #0) with attempt id 87bb1f3222b3bca1378b282772219f68 to 192.168.178.58:36731-ed0f0d @ Pi4.fritz.box (dataPort=37637) with allocation id dbd86abbec98478d14c1fc74993b4040
+2022-06-05 17:46:49,866 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (aec839dc53be3f6344b415017101f22a) switched from SCHEDULED to DEPLOYING.
+2022-06-05 17:46:49,866 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (3/3) (attempt #0) with attempt id aec839dc53be3f6344b415017101f22a to 192.168.178.55:40083-855cea @ Pi3.fritz.box (dataPort=38663) with allocation id c9bc19527713398326d5e01ebf852392
+2022-06-05 17:46:50,156 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (886cb0346b75e5bc9c55f651d9fd239e) switched from DEPLOYING to INITIALIZING.
+2022-06-05 17:46:50,157 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (a65c30fa12a0674c049e736785cf8af7) switched from DEPLOYING to INITIALIZING.
+2022-06-05 17:46:50,298 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (a65c30fa12a0674c049e736785cf8af7) switched from INITIALIZING to RUNNING.
+2022-06-05 17:46:50,366 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (4b813f3abcab153572383171bab68273) switched from DEPLOYING to INITIALIZING.
+2022-06-05 17:46:50,496 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (87bb1f3222b3bca1378b282772219f68) switched from DEPLOYING to INITIALIZING.
+2022-06-05 17:46:50,912 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (aec839dc53be3f6344b415017101f22a) switched from DEPLOYING to INITIALIZING.
+2022-06-05 17:46:51,425 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (4b813f3abcab153572383171bab68273) switched from INITIALIZING to RUNNING.
+2022-06-05 17:46:51,426 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (886cb0346b75e5bc9c55f651d9fd239e) switched from INITIALIZING to RUNNING.
+2022-06-05 17:46:51,834 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (0b8b9759ddb45b1558748591bc6e284f) switched from DEPLOYING to INITIALIZING.
+2022-06-05 17:46:52,653 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (6b24ab43d2345c6f9ef7ec25e133a82e) switched from DEPLOYING to INITIALIZING.
+2022-06-05 17:46:57,161 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (0b8b9759ddb45b1558748591bc6e284f) switched from INITIALIZING to RUNNING.
+2022-06-05 17:46:57,177 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (87bb1f3222b3bca1378b282772219f68) switched from INITIALIZING to RUNNING.
+2022-06-05 17:47:03,098 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (6b24ab43d2345c6f9ef7ec25e133a82e) switched from INITIALIZING to RUNNING.
+2022-06-05 17:47:03,201 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (aec839dc53be3f6344b415017101f22a) switched from INITIALIZING to RUNNING.
+2022-06-05 17:48:21,743 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (0b8b9759ddb45b1558748591bc6e284f) switched from RUNNING to FINISHED.
+2022-06-05 17:48:21,747 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (a65c30fa12a0674c049e736785cf8af7) switched from RUNNING to FINISHED.
+2022-06-05 17:48:21,749 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (4b813f3abcab153572383171bab68273) switched from RUNNING to FINISHED.
+2022-06-05 17:48:21,775 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (886cb0346b75e5bc9c55f651d9fd239e) switched from RUNNING to FINISHED.
+2022-06-05 17:48:21,777 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job dabac4f73cbfb44ad63ce14039cff21d: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=2}]
+2022-06-05 17:48:21,783 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (87bb1f3222b3bca1378b282772219f68) switched from RUNNING to FINISHED.
+2022-06-05 17:48:21,784 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job dabac4f73cbfb44ad63ce14039cff21d: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2022-06-05 17:48:21,809 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (6b24ab43d2345c6f9ef7ec25e133a82e) switched from RUNNING to FINISHED.
+2022-06-05 17:48:21,810 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job dabac4f73cbfb44ad63ce14039cff21d: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2022-06-05 17:48:21,823 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (aec839dc53be3f6344b415017101f22a) switched from RUNNING to FINISHED.
+2022-06-05 17:48:21,825 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Clearing resource requirements of job dabac4f73cbfb44ad63ce14039cff21d
+2022-06-05 17:48:21,825 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job StreamWordCount (dabac4f73cbfb44ad63ce14039cff21d) switched from state RUNNING to FINISHED.
+2022-06-05 17:48:21,826 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - Stopping checkpoint coordinator for job dabac4f73cbfb44ad63ce14039cff21d.
+2022-06-05 17:48:21,831 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Job dabac4f73cbfb44ad63ce14039cff21d reached terminal state FINISHED.
+2022-06-05 17:48:21,848 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Stopping the JobMaster for job 'StreamWordCount' (dabac4f73cbfb44ad63ce14039cff21d).
+2022-06-05 17:48:21,854 INFO  org.apache.flink.runtime.checkpoint.StandaloneCompletedCheckpointStore [] - Shutting down
+2022-06-05 17:48:21,855 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [c9bc19527713398326d5e01ebf852392].
+2022-06-05 17:48:21,857 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [952cf4a646a7a397a6cea019eef2b52f].
+2022-06-05 17:48:21,857 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [dbd86abbec98478d14c1fc74993b4040].
+2022-06-05 17:48:21,858 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Close ResourceManager connection 7d070d1f2d95b5fa9094210e17b4260e: Stopping JobMaster for job 'StreamWordCount' (dabac4f73cbfb44ad63ce14039cff21d).
+2022-06-05 17:48:21,860 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Disconnect job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_2 for job dabac4f73cbfb44ad63ce14039cff21d from the resource manager.
+2022-06-05 17:51:28,714 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Received JobGraph submission 'StreamWordCount' (b5c34196eeb4104433ae18dc1d256707).
+2022-06-05 17:51:28,714 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Submitting job 'StreamWordCount' (b5c34196eeb4104433ae18dc1d256707).
+2022-06-05 17:51:28,718 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService             [] - Starting RPC endpoint for org.apache.flink.runtime.jobmaster.JobMaster at akka://flink/user/rpc/jobmanager_3 .
+2022-06-05 17:51:28,719 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Initializing job 'StreamWordCount' (b5c34196eeb4104433ae18dc1d256707).
+2022-06-05 17:51:28,721 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Using restart back off time strategy NoRestartBackoffTimeStrategy for StreamWordCount (b5c34196eeb4104433ae18dc1d256707).
+2022-06-05 17:51:28,722 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Running initialization on master for job StreamWordCount (b5c34196eeb4104433ae18dc1d256707).
+2022-06-05 17:51:28,723 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Successfully ran initialization on master in 0 ms.
+2022-06-05 17:51:28,724 INFO  org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology [] - Built 1 pipelined regions in 0 ms
+2022-06-05 17:51:28,724 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - No state backend has been configured, using default (HashMap) org.apache.flink.runtime.state.hashmap.HashMapStateBackend@32ee2782
+2022-06-05 17:51:28,725 INFO  org.apache.flink.runtime.state.StateBackendLoader            [] - State backend loader loads the state backend as HashMapStateBackend
+2022-06-05 17:51:28,725 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Checkpoint storage is set to 'jobmanager'
+2022-06-05 17:51:28,725 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - No checkpoint found during restore.
+2022-06-05 17:51:28,725 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Using failover strategy org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionFailoverStrategy@326ab01c for StreamWordCount (b5c34196eeb4104433ae18dc1d256707).
+2022-06-05 17:51:28,726 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Starting execution of job 'StreamWordCount' (b5c34196eeb4104433ae18dc1d256707) under job master id 00000000000000000000000000000000.
+2022-06-05 17:51:28,727 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Starting scheduling with scheduling strategy [org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy]
+2022-06-05 17:51:28,727 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job StreamWordCount (b5c34196eeb4104433ae18dc1d256707) switched from state CREATED to RUNNING.
+2022-06-05 17:51:28,727 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (0e7fdfa85b36a57b25af6a27962c3e9d) switched from CREATED to SCHEDULED.
+2022-06-05 17:51:28,727 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (453f29e577911840ef732e329cfbd30a) switched from CREATED to SCHEDULED.
+2022-06-05 17:51:28,727 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (b24404fbb7e4f9e10e857ea7a5983874) switched from CREATED to SCHEDULED.
+2022-06-05 17:51:28,727 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (b50fff84b9b0eb0e8bdd386c791ba455) switched from CREATED to SCHEDULED.
+2022-06-05 17:51:28,728 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (5e621c79441b2ca3abc9e002cd5ad80c) switched from CREATED to SCHEDULED.
+2022-06-05 17:51:28,728 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (ad3a4d3d55bc2b61a8a4d52ec9ed75a9) switched from CREATED to SCHEDULED.
+2022-06-05 17:51:28,728 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (bb0c07dee7d992e1f6ef9cdd15a64e08) switched from CREATED to SCHEDULED.
+2022-06-05 17:51:28,729 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Connecting to ResourceManager akka.tcp://flink@192.168.178.56:6123/user/rpc/resourcemanager_*(00000000000000000000000000000000)
+2022-06-05 17:51:28,730 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Resolved ResourceManager address, beginning registration
+2022-06-05 17:51:28,731 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registering job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_3 for job b5c34196eeb4104433ae18dc1d256707.
+2022-06-05 17:51:28,732 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registered job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_3 for job b5c34196eeb4104433ae18dc1d256707.
+2022-06-05 17:51:28,734 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - JobManager successfully registered at ResourceManager, leader id: 00000000000000000000000000000000.
+2022-06-05 17:51:28,734 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job b5c34196eeb4104433ae18dc1d256707: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=3}]
+2022-06-05 17:51:28,898 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (0e7fdfa85b36a57b25af6a27962c3e9d) switched from SCHEDULED to DEPLOYING.
+2022-06-05 17:51:28,899 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Socket Stream (1/1) (attempt #0) with attempt id 0e7fdfa85b36a57b25af6a27962c3e9d to 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453) with allocation id e6b6267e11d63d4f5f7fca38fccae23b
+2022-06-05 17:51:28,900 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (453f29e577911840ef732e329cfbd30a) switched from SCHEDULED to DEPLOYING.
+2022-06-05 17:51:28,900 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (1/3) (attempt #0) with attempt id 453f29e577911840ef732e329cfbd30a to 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453) with allocation id e6b6267e11d63d4f5f7fca38fccae23b
+2022-06-05 17:51:28,901 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (b24404fbb7e4f9e10e857ea7a5983874) switched from SCHEDULED to DEPLOYING.
+2022-06-05 17:51:28,913 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (2/3) (attempt #0) with attempt id b24404fbb7e4f9e10e857ea7a5983874 to 192.168.178.55:40083-855cea @ Pi3.fritz.box (dataPort=38663) with allocation id 80d56f90287e06ba2c0d5790d3d96b47
+2022-06-05 17:51:28,914 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (b50fff84b9b0eb0e8bdd386c791ba455) switched from SCHEDULED to DEPLOYING.
+2022-06-05 17:51:28,927 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (3/3) (attempt #0) with attempt id b50fff84b9b0eb0e8bdd386c791ba455 to 192.168.178.58:36731-ed0f0d @ Pi4.fritz.box (dataPort=37637) with allocation id ba3a045ddf1470cdfa335f2c5213a44a
+2022-06-05 17:51:28,928 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (5e621c79441b2ca3abc9e002cd5ad80c) switched from SCHEDULED to DEPLOYING.
+2022-06-05 17:51:28,928 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (1/3) (attempt #0) with attempt id 5e621c79441b2ca3abc9e002cd5ad80c to 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453) with allocation id e6b6267e11d63d4f5f7fca38fccae23b
+2022-06-05 17:51:28,930 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (ad3a4d3d55bc2b61a8a4d52ec9ed75a9) switched from SCHEDULED to DEPLOYING.
+2022-06-05 17:51:28,930 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (2/3) (attempt #0) with attempt id ad3a4d3d55bc2b61a8a4d52ec9ed75a9 to 192.168.178.55:40083-855cea @ Pi3.fritz.box (dataPort=38663) with allocation id 80d56f90287e06ba2c0d5790d3d96b47
+2022-06-05 17:51:28,930 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (bb0c07dee7d992e1f6ef9cdd15a64e08) switched from SCHEDULED to DEPLOYING.
+2022-06-05 17:51:28,930 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (3/3) (attempt #0) with attempt id bb0c07dee7d992e1f6ef9cdd15a64e08 to 192.168.178.58:36731-ed0f0d @ Pi4.fritz.box (dataPort=37637) with allocation id ba3a045ddf1470cdfa335f2c5213a44a
+2022-06-05 17:51:28,955 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (5e621c79441b2ca3abc9e002cd5ad80c) switched from DEPLOYING to INITIALIZING.
+2022-06-05 17:51:28,955 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (0e7fdfa85b36a57b25af6a27962c3e9d) switched from DEPLOYING to INITIALIZING.
+2022-06-05 17:51:28,956 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (0e7fdfa85b36a57b25af6a27962c3e9d) switched from INITIALIZING to RUNNING.
+2022-06-05 17:51:28,959 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (453f29e577911840ef732e329cfbd30a) switched from DEPLOYING to INITIALIZING.
+2022-06-05 17:51:28,968 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (5e621c79441b2ca3abc9e002cd5ad80c) switched from INITIALIZING to RUNNING.
+2022-06-05 17:51:28,970 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (453f29e577911840ef732e329cfbd30a) switched from INITIALIZING to RUNNING.
+2022-06-05 17:51:29,009 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (bb0c07dee7d992e1f6ef9cdd15a64e08) switched from DEPLOYING to INITIALIZING.
+2022-06-05 17:51:29,035 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (b50fff84b9b0eb0e8bdd386c791ba455) switched from DEPLOYING to INITIALIZING.
+2022-06-05 17:51:29,069 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (ad3a4d3d55bc2b61a8a4d52ec9ed75a9) switched from DEPLOYING to INITIALIZING.
+2022-06-05 17:51:29,070 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (b50fff84b9b0eb0e8bdd386c791ba455) switched from INITIALIZING to RUNNING.
+2022-06-05 17:51:29,086 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (b24404fbb7e4f9e10e857ea7a5983874) switched from DEPLOYING to INITIALIZING.
+2022-06-05 17:51:29,091 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (bb0c07dee7d992e1f6ef9cdd15a64e08) switched from INITIALIZING to RUNNING.
+2022-06-05 17:51:29,161 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (b24404fbb7e4f9e10e857ea7a5983874) switched from INITIALIZING to RUNNING.
+2022-06-05 17:51:29,215 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (ad3a4d3d55bc2b61a8a4d52ec9ed75a9) switched from INITIALIZING to RUNNING.
+2022-06-05 17:52:48,996 ERROR org.apache.flink.runtime.rest.handler.taskmanager.TaskManagerStdoutFileHandler [] - Failed to transfer file from TaskExecutor 192.168.178.55:40083-855cea.
+java.util.concurrent.CompletionException: org.apache.flink.util.FlinkException: The file STDOUT does not exist on the TaskExecutor.
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704) ~[?:?]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088) ~[?:?]
+	at org.apache.flink.runtime.rpc.akka.AkkaInvocationHandler.lambda$invokeRpc$1(AkkaInvocationHandler.java:251) ~[?:?]
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:859) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:837) ~[?:?]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088) ~[?:?]
+	at org.apache.flink.util.concurrent.FutureUtils.doForward(FutureUtils.java:1387) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.lambda$null$1(ClassLoadingUtils.java:93) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.runWithContextClassLoader(ClassLoadingUtils.java:68) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.lambda$guardCompletionWithContextClassLoader$2(ClassLoadingUtils.java:92) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:859) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:837) ~[?:?]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088) ~[?:?]
+	at org.apache.flink.runtime.concurrent.akka.AkkaFutureUtils$1.onComplete(AkkaFutureUtils.java:45) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.dispatch.OnComplete.internal(Future.scala:299) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.dispatch.OnComplete.internal(Future.scala:297) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.dispatch.japi$CallbackBridge.apply(Future.scala:224) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.dispatch.japi$CallbackBridge.apply(Future.scala:221) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at org.apache.flink.runtime.concurrent.akka.AkkaFutureUtils$DirectExecutionContext.execute(AkkaFutureUtils.java:65) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:68) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:284) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:284) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:284) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.pattern.PromiseActorRef.$bang(AskSupport.scala:621) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.pattern.PipeToSupport$PipeableFuture$$anonfun$pipeTo$1.applyOrElse(PipeToSupport.scala:25) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.pattern.PipeToSupport$PipeableFuture$$anonfun$pipeTo$1.applyOrElse(PipeToSupport.scala:23) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at scala.concurrent.Future.$anonfun$andThen$1(Future.scala:532) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:63) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:100) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:100) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) [?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020) [?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656) [?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594) [?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183) [?:?]
+Caused by: org.apache.flink.util.FlinkException: The file STDOUT does not exist on the TaskExecutor.
+	at org.apache.flink.runtime.taskexecutor.TaskExecutor.lambda$requestFileUploadByFilePath$24(TaskExecutor.java:2059) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:?]
+	at java.lang.Thread.run(Thread.java:750) ~[?:?]
+2022-06-05 17:52:49,012 ERROR org.apache.flink.runtime.rest.handler.taskmanager.TaskManagerStdoutFileHandler [] - Unhandled exception.
+org.apache.flink.util.FlinkException: The file STDOUT does not exist on the TaskExecutor.
+	at org.apache.flink.runtime.taskexecutor.TaskExecutor.lambda$requestFileUploadByFilePath$24(TaskExecutor.java:2059) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:?]
+	at java.lang.Thread.run(Thread.java:750) ~[?:?]
+2022-06-05 18:03:25,566 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (b50fff84b9b0eb0e8bdd386c791ba455) switched from RUNNING to FINISHED.
+2022-06-05 18:03:25,569 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (0e7fdfa85b36a57b25af6a27962c3e9d) switched from RUNNING to FINISHED.
+2022-06-05 18:03:25,571 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (453f29e577911840ef732e329cfbd30a) switched from RUNNING to FINISHED.
+2022-06-05 18:03:25,594 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (5e621c79441b2ca3abc9e002cd5ad80c) switched from RUNNING to FINISHED.
+2022-06-05 18:03:25,595 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job b5c34196eeb4104433ae18dc1d256707: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=2}]
+2022-06-05 18:03:25,597 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (bb0c07dee7d992e1f6ef9cdd15a64e08) switched from RUNNING to FINISHED.
+2022-06-05 18:03:25,598 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job b5c34196eeb4104433ae18dc1d256707: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2022-06-05 18:03:25,601 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (b24404fbb7e4f9e10e857ea7a5983874) switched from RUNNING to FINISHED.
+2022-06-05 18:03:25,603 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (ad3a4d3d55bc2b61a8a4d52ec9ed75a9) switched from RUNNING to FINISHED.
+2022-06-05 18:03:25,604 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Clearing resource requirements of job b5c34196eeb4104433ae18dc1d256707
+2022-06-05 18:03:25,604 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job StreamWordCount (b5c34196eeb4104433ae18dc1d256707) switched from state RUNNING to FINISHED.
+2022-06-05 18:03:25,604 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - Stopping checkpoint coordinator for job b5c34196eeb4104433ae18dc1d256707.
+2022-06-05 18:03:25,605 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Job b5c34196eeb4104433ae18dc1d256707 reached terminal state FINISHED.
+2022-06-05 18:03:25,607 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Stopping the JobMaster for job 'StreamWordCount' (b5c34196eeb4104433ae18dc1d256707).
+2022-06-05 18:03:25,607 INFO  org.apache.flink.runtime.checkpoint.StandaloneCompletedCheckpointStore [] - Shutting down
+2022-06-05 18:03:25,608 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [80d56f90287e06ba2c0d5790d3d96b47].
+2022-06-05 18:03:25,609 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [e6b6267e11d63d4f5f7fca38fccae23b].
+2022-06-05 18:03:25,609 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [ba3a045ddf1470cdfa335f2c5213a44a].
+2022-06-05 18:03:25,610 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Close ResourceManager connection 7d070d1f2d95b5fa9094210e17b4260e: Stopping JobMaster for job 'StreamWordCount' (b5c34196eeb4104433ae18dc1d256707).
+2022-06-05 18:03:25,610 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Disconnect job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_3 for job b5c34196eeb4104433ae18dc1d256707 from the resource manager.
+2022-06-05 18:36:51,976 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Received JobGraph submission 'StreamWordCount' (218f53fd8b03c76d76a8fd51aaf746f0).
+2022-06-05 18:36:51,976 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Submitting job 'StreamWordCount' (218f53fd8b03c76d76a8fd51aaf746f0).
+2022-06-05 18:36:51,980 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService             [] - Starting RPC endpoint for org.apache.flink.runtime.jobmaster.JobMaster at akka://flink/user/rpc/jobmanager_4 .
+2022-06-05 18:36:51,981 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Initializing job 'StreamWordCount' (218f53fd8b03c76d76a8fd51aaf746f0).
+2022-06-05 18:36:51,982 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Using restart back off time strategy NoRestartBackoffTimeStrategy for StreamWordCount (218f53fd8b03c76d76a8fd51aaf746f0).
+2022-06-05 18:36:51,983 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Running initialization on master for job StreamWordCount (218f53fd8b03c76d76a8fd51aaf746f0).
+2022-06-05 18:36:51,983 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Successfully ran initialization on master in 0 ms.
+2022-06-05 18:36:51,984 INFO  org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology [] - Built 1 pipelined regions in 0 ms
+2022-06-05 18:36:51,986 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - No state backend has been configured, using default (HashMap) org.apache.flink.runtime.state.hashmap.HashMapStateBackend@49e97ec0
+2022-06-05 18:36:51,986 INFO  org.apache.flink.runtime.state.StateBackendLoader            [] - State backend loader loads the state backend as HashMapStateBackend
+2022-06-05 18:36:51,986 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Checkpoint storage is set to 'jobmanager'
+2022-06-05 18:36:51,987 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - No checkpoint found during restore.
+2022-06-05 18:36:51,987 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Using failover strategy org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionFailoverStrategy@a0d272e for StreamWordCount (218f53fd8b03c76d76a8fd51aaf746f0).
+2022-06-05 18:36:51,988 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Starting execution of job 'StreamWordCount' (218f53fd8b03c76d76a8fd51aaf746f0) under job master id 00000000000000000000000000000000.
+2022-06-05 18:36:51,988 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Starting scheduling with scheduling strategy [org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy]
+2022-06-05 18:36:51,989 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job StreamWordCount (218f53fd8b03c76d76a8fd51aaf746f0) switched from state CREATED to RUNNING.
+2022-06-05 18:36:51,989 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (97603aa2d44d011bf420f0376e4e6818) switched from CREATED to SCHEDULED.
+2022-06-05 18:36:51,989 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (b26e6967a0fe3b2c3c99ef1a477bbfaf) switched from CREATED to SCHEDULED.
+2022-06-05 18:36:51,989 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (5f01470cc77f136f180b7d988af12350) switched from CREATED to SCHEDULED.
+2022-06-05 18:36:51,989 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (5994f7defe8e33756b34f9a2a16d48f6) switched from CREATED to SCHEDULED.
+2022-06-05 18:36:51,989 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (5497e228ac1798695eded5c315c241cb) switched from CREATED to SCHEDULED.
+2022-06-05 18:36:51,989 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (73d7e5fbf37f6988fd5420805967f7b9) switched from CREATED to SCHEDULED.
+2022-06-05 18:36:51,989 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (b824cd31361f41d081e29e0690407041) switched from CREATED to SCHEDULED.
+2022-06-05 18:36:51,991 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Connecting to ResourceManager akka.tcp://flink@192.168.178.56:6123/user/rpc/resourcemanager_*(00000000000000000000000000000000)
+2022-06-05 18:36:51,992 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Resolved ResourceManager address, beginning registration
+2022-06-05 18:36:51,992 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registering job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_4 for job 218f53fd8b03c76d76a8fd51aaf746f0.
+2022-06-05 18:36:51,993 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registered job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_4 for job 218f53fd8b03c76d76a8fd51aaf746f0.
+2022-06-05 18:36:51,994 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - JobManager successfully registered at ResourceManager, leader id: 00000000000000000000000000000000.
+2022-06-05 18:36:51,994 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 218f53fd8b03c76d76a8fd51aaf746f0: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=3}]
+2022-06-05 18:36:52,139 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (97603aa2d44d011bf420f0376e4e6818) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:36:52,139 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Socket Stream (1/1) (attempt #0) with attempt id 97603aa2d44d011bf420f0376e4e6818 to 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453) with allocation id baeeed38cc78d0fdb2e08267a2f4cfe7
+2022-06-05 18:36:52,139 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (b26e6967a0fe3b2c3c99ef1a477bbfaf) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:36:52,140 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (1/3) (attempt #0) with attempt id b26e6967a0fe3b2c3c99ef1a477bbfaf to 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453) with allocation id baeeed38cc78d0fdb2e08267a2f4cfe7
+2022-06-05 18:36:52,140 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (5f01470cc77f136f180b7d988af12350) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:36:52,144 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (2/3) (attempt #0) with attempt id 5f01470cc77f136f180b7d988af12350 to 192.168.178.58:36731-ed0f0d @ Pi4.fritz.box (dataPort=37637) with allocation id 0ac2cf38b159232feb75e47a9156152e
+2022-06-05 18:36:52,145 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (5994f7defe8e33756b34f9a2a16d48f6) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:36:52,151 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (3/3) (attempt #0) with attempt id 5994f7defe8e33756b34f9a2a16d48f6 to 192.168.178.55:40083-855cea @ Pi3.fritz.box (dataPort=38663) with allocation id 6b159ceb07c3cbcee5c881ab732abc65
+2022-06-05 18:36:52,151 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (5497e228ac1798695eded5c315c241cb) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:36:52,151 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (1/3) (attempt #0) with attempt id 5497e228ac1798695eded5c315c241cb to 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453) with allocation id baeeed38cc78d0fdb2e08267a2f4cfe7
+2022-06-05 18:36:52,152 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (73d7e5fbf37f6988fd5420805967f7b9) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:36:52,152 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (2/3) (attempt #0) with attempt id 73d7e5fbf37f6988fd5420805967f7b9 to 192.168.178.58:36731-ed0f0d @ Pi4.fritz.box (dataPort=37637) with allocation id 0ac2cf38b159232feb75e47a9156152e
+2022-06-05 18:36:52,152 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (b824cd31361f41d081e29e0690407041) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:36:52,152 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (3/3) (attempt #0) with attempt id b824cd31361f41d081e29e0690407041 to 192.168.178.55:40083-855cea @ Pi3.fritz.box (dataPort=38663) with allocation id 6b159ceb07c3cbcee5c881ab732abc65
+2022-06-05 18:36:52,175 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (97603aa2d44d011bf420f0376e4e6818) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:36:52,175 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (5497e228ac1798695eded5c315c241cb) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:36:52,178 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (97603aa2d44d011bf420f0376e4e6818) switched from INITIALIZING to RUNNING.
+2022-06-05 18:36:52,184 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (b26e6967a0fe3b2c3c99ef1a477bbfaf) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:36:52,188 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (5497e228ac1798695eded5c315c241cb) switched from INITIALIZING to RUNNING.
+2022-06-05 18:36:52,192 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (b26e6967a0fe3b2c3c99ef1a477bbfaf) switched from INITIALIZING to RUNNING.
+2022-06-05 18:36:52,197 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (97603aa2d44d011bf420f0376e4e6818) switched from RUNNING to FINISHED.
+2022-06-05 18:36:52,199 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (b26e6967a0fe3b2c3c99ef1a477bbfaf) switched from RUNNING to FINISHED.
+2022-06-05 18:36:52,214 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (73d7e5fbf37f6988fd5420805967f7b9) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:36:52,228 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (5f01470cc77f136f180b7d988af12350) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:36:52,254 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (73d7e5fbf37f6988fd5420805967f7b9) switched from INITIALIZING to RUNNING.
+2022-06-05 18:36:52,269 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (5f01470cc77f136f180b7d988af12350) switched from INITIALIZING to RUNNING.
+2022-06-05 18:36:52,280 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (b824cd31361f41d081e29e0690407041) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:36:52,309 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (5f01470cc77f136f180b7d988af12350) switched from RUNNING to FINISHED.
+2022-06-05 18:36:52,331 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (5994f7defe8e33756b34f9a2a16d48f6) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:36:52,381 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (b824cd31361f41d081e29e0690407041) switched from INITIALIZING to RUNNING.
+2022-06-05 18:36:52,425 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (5994f7defe8e33756b34f9a2a16d48f6) switched from INITIALIZING to RUNNING.
+2022-06-05 18:36:52,605 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (5497e228ac1798695eded5c315c241cb) switched from RUNNING to FINISHED.
+2022-06-05 18:36:52,606 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (5994f7defe8e33756b34f9a2a16d48f6) switched from RUNNING to FINISHED.
+2022-06-05 18:36:52,606 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 218f53fd8b03c76d76a8fd51aaf746f0: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=2}]
+2022-06-05 18:36:52,607 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (b824cd31361f41d081e29e0690407041) switched from RUNNING to FINISHED.
+2022-06-05 18:36:52,607 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 218f53fd8b03c76d76a8fd51aaf746f0: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2022-06-05 18:36:52,630 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 218f53fd8b03c76d76a8fd51aaf746f0: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2022-06-05 18:36:52,632 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (73d7e5fbf37f6988fd5420805967f7b9) switched from RUNNING to FINISHED.
+2022-06-05 18:36:52,632 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job StreamWordCount (218f53fd8b03c76d76a8fd51aaf746f0) switched from state RUNNING to FINISHED.
+2022-06-05 18:36:52,632 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Clearing resource requirements of job 218f53fd8b03c76d76a8fd51aaf746f0
+2022-06-05 18:36:52,632 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - Stopping checkpoint coordinator for job 218f53fd8b03c76d76a8fd51aaf746f0.
+2022-06-05 18:36:52,633 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Job 218f53fd8b03c76d76a8fd51aaf746f0 reached terminal state FINISHED.
+2022-06-05 18:36:52,635 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Stopping the JobMaster for job 'StreamWordCount' (218f53fd8b03c76d76a8fd51aaf746f0).
+2022-06-05 18:36:52,636 INFO  org.apache.flink.runtime.checkpoint.StandaloneCompletedCheckpointStore [] - Shutting down
+2022-06-05 18:36:52,636 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [6b159ceb07c3cbcee5c881ab732abc65].
+2022-06-05 18:36:52,637 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [baeeed38cc78d0fdb2e08267a2f4cfe7].
+2022-06-05 18:36:52,637 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [0ac2cf38b159232feb75e47a9156152e].
+2022-06-05 18:36:52,638 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Close ResourceManager connection 7d070d1f2d95b5fa9094210e17b4260e: Stopping JobMaster for job 'StreamWordCount' (218f53fd8b03c76d76a8fd51aaf746f0).
+2022-06-05 18:36:52,638 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Disconnect job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_4 for job 218f53fd8b03c76d76a8fd51aaf746f0 from the resource manager.
+2022-06-05 18:39:31,121 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Received JobGraph submission 'StreamWordCount' (b4c2a7eed941996f05b05ae5360d966f).
+2022-06-05 18:39:31,121 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Submitting job 'StreamWordCount' (b4c2a7eed941996f05b05ae5360d966f).
+2022-06-05 18:39:31,140 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService             [] - Starting RPC endpoint for org.apache.flink.runtime.jobmaster.JobMaster at akka://flink/user/rpc/jobmanager_5 .
+2022-06-05 18:39:31,141 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Initializing job 'StreamWordCount' (b4c2a7eed941996f05b05ae5360d966f).
+2022-06-05 18:39:31,144 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Using restart back off time strategy NoRestartBackoffTimeStrategy for StreamWordCount (b4c2a7eed941996f05b05ae5360d966f).
+2022-06-05 18:39:31,147 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Running initialization on master for job StreamWordCount (b4c2a7eed941996f05b05ae5360d966f).
+2022-06-05 18:39:31,147 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Successfully ran initialization on master in 0 ms.
+2022-06-05 18:39:31,148 INFO  org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology [] - Built 1 pipelined regions in 0 ms
+2022-06-05 18:39:31,159 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - No state backend has been configured, using default (HashMap) org.apache.flink.runtime.state.hashmap.HashMapStateBackend@501ca2e1
+2022-06-05 18:39:31,159 INFO  org.apache.flink.runtime.state.StateBackendLoader            [] - State backend loader loads the state backend as HashMapStateBackend
+2022-06-05 18:39:31,159 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Checkpoint storage is set to 'jobmanager'
+2022-06-05 18:39:31,160 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - No checkpoint found during restore.
+2022-06-05 18:39:31,160 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Using failover strategy org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionFailoverStrategy@1ba395d for StreamWordCount (b4c2a7eed941996f05b05ae5360d966f).
+2022-06-05 18:39:31,160 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Starting execution of job 'StreamWordCount' (b4c2a7eed941996f05b05ae5360d966f) under job master id 00000000000000000000000000000000.
+2022-06-05 18:39:31,161 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Starting scheduling with scheduling strategy [org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy]
+2022-06-05 18:39:31,161 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job StreamWordCount (b4c2a7eed941996f05b05ae5360d966f) switched from state CREATED to RUNNING.
+2022-06-05 18:39:31,162 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (427d7cad8e42a374467b4fc89398deb0) switched from CREATED to SCHEDULED.
+2022-06-05 18:39:31,162 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (9adb4e0ceb3133a174dc8f57dcfcef40) switched from CREATED to SCHEDULED.
+2022-06-05 18:39:31,162 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (cc9676e2ba377d1cf462709eff103f69) switched from CREATED to SCHEDULED.
+2022-06-05 18:39:31,162 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (71fc065f6bf0c4787039770cd36b3c95) switched from CREATED to SCHEDULED.
+2022-06-05 18:39:31,162 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (30c5aa46608f9e9e076525010a1186d6) switched from CREATED to SCHEDULED.
+2022-06-05 18:39:31,162 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (87a9183a4930dabd802ed0b09d176df5) switched from CREATED to SCHEDULED.
+2022-06-05 18:39:31,163 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (609e473e051e977e66b2634cb379abcb) switched from CREATED to SCHEDULED.
+2022-06-05 18:39:31,164 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Connecting to ResourceManager akka.tcp://flink@192.168.178.56:6123/user/rpc/resourcemanager_*(00000000000000000000000000000000)
+2022-06-05 18:39:31,171 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Resolved ResourceManager address, beginning registration
+2022-06-05 18:39:31,172 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registering job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_5 for job b4c2a7eed941996f05b05ae5360d966f.
+2022-06-05 18:39:31,173 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registered job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_5 for job b4c2a7eed941996f05b05ae5360d966f.
+2022-06-05 18:39:31,177 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - JobManager successfully registered at ResourceManager, leader id: 00000000000000000000000000000000.
+2022-06-05 18:39:31,178 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job b4c2a7eed941996f05b05ae5360d966f: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=3}]
+2022-06-05 18:39:31,295 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (427d7cad8e42a374467b4fc89398deb0) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:39:31,302 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Socket Stream (1/1) (attempt #0) with attempt id 427d7cad8e42a374467b4fc89398deb0 to 192.168.178.58:36731-ed0f0d @ Pi4.fritz.box (dataPort=37637) with allocation id c2578c8c1c32d9dec38f9dfdf507719d
+2022-06-05 18:39:31,303 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (9adb4e0ceb3133a174dc8f57dcfcef40) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:39:31,304 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (1/3) (attempt #0) with attempt id 9adb4e0ceb3133a174dc8f57dcfcef40 to 192.168.178.58:36731-ed0f0d @ Pi4.fritz.box (dataPort=37637) with allocation id c2578c8c1c32d9dec38f9dfdf507719d
+2022-06-05 18:39:31,305 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (cc9676e2ba377d1cf462709eff103f69) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:39:31,315 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (2/3) (attempt #0) with attempt id cc9676e2ba377d1cf462709eff103f69 to 192.168.178.55:40083-855cea @ Pi3.fritz.box (dataPort=38663) with allocation id 3e40ce5242cd6d991f837b914258bb44
+2022-06-05 18:39:31,315 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (71fc065f6bf0c4787039770cd36b3c95) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:39:31,316 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (3/3) (attempt #0) with attempt id 71fc065f6bf0c4787039770cd36b3c95 to 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453) with allocation id 5c890a1c41c76bd735f29e72df608c92
+2022-06-05 18:39:31,316 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (30c5aa46608f9e9e076525010a1186d6) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:39:31,316 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (1/3) (attempt #0) with attempt id 30c5aa46608f9e9e076525010a1186d6 to 192.168.178.58:36731-ed0f0d @ Pi4.fritz.box (dataPort=37637) with allocation id c2578c8c1c32d9dec38f9dfdf507719d
+2022-06-05 18:39:31,317 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (87a9183a4930dabd802ed0b09d176df5) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:39:31,318 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (2/3) (attempt #0) with attempt id 87a9183a4930dabd802ed0b09d176df5 to 192.168.178.55:40083-855cea @ Pi3.fritz.box (dataPort=38663) with allocation id 3e40ce5242cd6d991f837b914258bb44
+2022-06-05 18:39:31,318 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (609e473e051e977e66b2634cb379abcb) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:39:31,318 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (3/3) (attempt #0) with attempt id 609e473e051e977e66b2634cb379abcb to 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453) with allocation id 5c890a1c41c76bd735f29e72df608c92
+2022-06-05 18:39:31,399 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (609e473e051e977e66b2634cb379abcb) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:39:31,403 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (71fc065f6bf0c4787039770cd36b3c95) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:39:31,410 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (71fc065f6bf0c4787039770cd36b3c95) switched from INITIALIZING to RUNNING.
+2022-06-05 18:39:31,415 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (609e473e051e977e66b2634cb379abcb) switched from INITIALIZING to RUNNING.
+2022-06-05 18:39:31,438 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (30c5aa46608f9e9e076525010a1186d6) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:39:31,459 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (87a9183a4930dabd802ed0b09d176df5) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:39:31,474 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (9adb4e0ceb3133a174dc8f57dcfcef40) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:39:31,475 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (427d7cad8e42a374467b4fc89398deb0) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:39:31,478 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (cc9676e2ba377d1cf462709eff103f69) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:39:31,517 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (427d7cad8e42a374467b4fc89398deb0) switched from INITIALIZING to RUNNING.
+2022-06-05 18:39:31,541 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (9adb4e0ceb3133a174dc8f57dcfcef40) switched from INITIALIZING to RUNNING.
+2022-06-05 18:39:31,545 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (30c5aa46608f9e9e076525010a1186d6) switched from INITIALIZING to RUNNING.
+2022-06-05 18:39:31,590 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (cc9676e2ba377d1cf462709eff103f69) switched from INITIALIZING to RUNNING.
+2022-06-05 18:39:31,599 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (71fc065f6bf0c4787039770cd36b3c95) switched from RUNNING to FINISHED.
+2022-06-05 18:39:31,601 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (9adb4e0ceb3133a174dc8f57dcfcef40) switched from RUNNING to FINISHED.
+2022-06-05 18:39:31,603 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (427d7cad8e42a374467b4fc89398deb0) switched from RUNNING to FINISHED.
+2022-06-05 18:39:31,624 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (87a9183a4930dabd802ed0b09d176df5) switched from INITIALIZING to RUNNING.
+2022-06-05 18:39:31,678 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (cc9676e2ba377d1cf462709eff103f69) switched from RUNNING to FINISHED.
+2022-06-05 18:39:31,680 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (30c5aa46608f9e9e076525010a1186d6) switched from RUNNING to FINISHED.
+2022-06-05 18:39:31,681 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (609e473e051e977e66b2634cb379abcb) switched from RUNNING to FINISHED.
+2022-06-05 18:39:31,681 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job b4c2a7eed941996f05b05ae5360d966f: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=2}]
+2022-06-05 18:39:31,682 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job b4c2a7eed941996f05b05ae5360d966f: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2022-06-05 18:39:31,711 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job b4c2a7eed941996f05b05ae5360d966f: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2022-06-05 18:39:31,758 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (87a9183a4930dabd802ed0b09d176df5) switched from RUNNING to FINISHED.
+2022-06-05 18:39:31,759 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job StreamWordCount (b4c2a7eed941996f05b05ae5360d966f) switched from state RUNNING to FINISHED.
+2022-06-05 18:39:31,759 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Clearing resource requirements of job b4c2a7eed941996f05b05ae5360d966f
+2022-06-05 18:39:31,759 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - Stopping checkpoint coordinator for job b4c2a7eed941996f05b05ae5360d966f.
+2022-06-05 18:39:31,759 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Job b4c2a7eed941996f05b05ae5360d966f reached terminal state FINISHED.
+2022-06-05 18:39:31,761 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Stopping the JobMaster for job 'StreamWordCount' (b4c2a7eed941996f05b05ae5360d966f).
+2022-06-05 18:39:31,761 INFO  org.apache.flink.runtime.checkpoint.StandaloneCompletedCheckpointStore [] - Shutting down
+2022-06-05 18:39:31,761 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [3e40ce5242cd6d991f837b914258bb44].
+2022-06-05 18:39:31,763 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [5c890a1c41c76bd735f29e72df608c92].
+2022-06-05 18:39:31,764 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [c2578c8c1c32d9dec38f9dfdf507719d].
+2022-06-05 18:39:31,764 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Close ResourceManager connection 7d070d1f2d95b5fa9094210e17b4260e: Stopping JobMaster for job 'StreamWordCount' (b4c2a7eed941996f05b05ae5360d966f).
+2022-06-05 18:39:31,765 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Disconnect job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_5 for job b4c2a7eed941996f05b05ae5360d966f from the resource manager.
+2022-06-05 18:42:12,623 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Received JobGraph submission 'StreamWordCount' (941987d223384dd531b1f8a4b35fb74f).
+2022-06-05 18:42:12,623 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Submitting job 'StreamWordCount' (941987d223384dd531b1f8a4b35fb74f).
+2022-06-05 18:42:12,626 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService             [] - Starting RPC endpoint for org.apache.flink.runtime.jobmaster.JobMaster at akka://flink/user/rpc/jobmanager_6 .
+2022-06-05 18:42:12,626 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Initializing job 'StreamWordCount' (941987d223384dd531b1f8a4b35fb74f).
+2022-06-05 18:42:12,627 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Using restart back off time strategy NoRestartBackoffTimeStrategy for StreamWordCount (941987d223384dd531b1f8a4b35fb74f).
+2022-06-05 18:42:12,627 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Running initialization on master for job StreamWordCount (941987d223384dd531b1f8a4b35fb74f).
+2022-06-05 18:42:12,627 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Successfully ran initialization on master in 0 ms.
+2022-06-05 18:42:12,628 INFO  org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology [] - Built 1 pipelined regions in 0 ms
+2022-06-05 18:42:12,629 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - No state backend has been configured, using default (HashMap) org.apache.flink.runtime.state.hashmap.HashMapStateBackend@9a18a6c
+2022-06-05 18:42:12,629 INFO  org.apache.flink.runtime.state.StateBackendLoader            [] - State backend loader loads the state backend as HashMapStateBackend
+2022-06-05 18:42:12,629 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Checkpoint storage is set to 'jobmanager'
+2022-06-05 18:42:12,629 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - No checkpoint found during restore.
+2022-06-05 18:42:12,629 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Using failover strategy org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionFailoverStrategy@7855ce77 for StreamWordCount (941987d223384dd531b1f8a4b35fb74f).
+2022-06-05 18:42:12,630 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Starting execution of job 'StreamWordCount' (941987d223384dd531b1f8a4b35fb74f) under job master id 00000000000000000000000000000000.
+2022-06-05 18:42:12,631 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Starting scheduling with scheduling strategy [org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy]
+2022-06-05 18:42:12,631 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job StreamWordCount (941987d223384dd531b1f8a4b35fb74f) switched from state CREATED to RUNNING.
+2022-06-05 18:42:12,632 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (d835fd83951de1ed0dc9bb13df697df4) switched from CREATED to SCHEDULED.
+2022-06-05 18:42:12,632 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (d6489ede1cf48220852ea7f22c6bafba) switched from CREATED to SCHEDULED.
+2022-06-05 18:42:12,632 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (5e700acf844a49120a8eb4d787746b82) switched from CREATED to SCHEDULED.
+2022-06-05 18:42:12,632 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (a26bbaf890b5c6aa97bc7cc06b6f46fa) switched from CREATED to SCHEDULED.
+2022-06-05 18:42:12,632 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (5a108d29cae78cdb7a5294ef0a3f1ee8) switched from CREATED to SCHEDULED.
+2022-06-05 18:42:12,632 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (7ad7ee23abbb7d180e97bf59115d63c7) switched from CREATED to SCHEDULED.
+2022-06-05 18:42:12,632 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (fef06ca5420cf906fc895f42cb491b95) switched from CREATED to SCHEDULED.
+2022-06-05 18:42:12,633 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Connecting to ResourceManager akka.tcp://flink@192.168.178.56:6123/user/rpc/resourcemanager_*(00000000000000000000000000000000)
+2022-06-05 18:42:12,634 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Resolved ResourceManager address, beginning registration
+2022-06-05 18:42:12,634 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registering job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_6 for job 941987d223384dd531b1f8a4b35fb74f.
+2022-06-05 18:42:12,635 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registered job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_6 for job 941987d223384dd531b1f8a4b35fb74f.
+2022-06-05 18:42:12,635 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - JobManager successfully registered at ResourceManager, leader id: 00000000000000000000000000000000.
+2022-06-05 18:42:12,636 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 941987d223384dd531b1f8a4b35fb74f: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=3}]
+2022-06-05 18:42:12,764 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (d835fd83951de1ed0dc9bb13df697df4) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:42:12,765 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Socket Stream (1/1) (attempt #0) with attempt id d835fd83951de1ed0dc9bb13df697df4 to 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453) with allocation id 023377f3099f9e68ae53b231a91ac340
+2022-06-05 18:42:12,765 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (d6489ede1cf48220852ea7f22c6bafba) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:42:12,766 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (1/3) (attempt #0) with attempt id d6489ede1cf48220852ea7f22c6bafba to 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453) with allocation id 023377f3099f9e68ae53b231a91ac340
+2022-06-05 18:42:12,766 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (5e700acf844a49120a8eb4d787746b82) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:42:12,773 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (2/3) (attempt #0) with attempt id 5e700acf844a49120a8eb4d787746b82 to 192.168.178.58:36731-ed0f0d @ Pi4.fritz.box (dataPort=37637) with allocation id 3071c48b96ba8908ee743da4209b07ba
+2022-06-05 18:42:12,773 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (a26bbaf890b5c6aa97bc7cc06b6f46fa) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:42:12,782 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (3/3) (attempt #0) with attempt id a26bbaf890b5c6aa97bc7cc06b6f46fa to 192.168.178.55:40083-855cea @ Pi3.fritz.box (dataPort=38663) with allocation id ed66bec8a442e208d9f67d8180c9a8d0
+2022-06-05 18:42:12,782 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (5a108d29cae78cdb7a5294ef0a3f1ee8) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:42:12,782 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (1/3) (attempt #0) with attempt id 5a108d29cae78cdb7a5294ef0a3f1ee8 to 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453) with allocation id 023377f3099f9e68ae53b231a91ac340
+2022-06-05 18:42:12,783 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (7ad7ee23abbb7d180e97bf59115d63c7) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:42:12,783 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (2/3) (attempt #0) with attempt id 7ad7ee23abbb7d180e97bf59115d63c7 to 192.168.178.58:36731-ed0f0d @ Pi4.fritz.box (dataPort=37637) with allocation id 3071c48b96ba8908ee743da4209b07ba
+2022-06-05 18:42:12,783 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (fef06ca5420cf906fc895f42cb491b95) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:42:12,784 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (3/3) (attempt #0) with attempt id fef06ca5420cf906fc895f42cb491b95 to 192.168.178.55:40083-855cea @ Pi3.fritz.box (dataPort=38663) with allocation id ed66bec8a442e208d9f67d8180c9a8d0
+2022-06-05 18:42:12,811 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (5a108d29cae78cdb7a5294ef0a3f1ee8) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:42:12,812 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (d835fd83951de1ed0dc9bb13df697df4) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:42:12,813 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (d835fd83951de1ed0dc9bb13df697df4) switched from INITIALIZING to RUNNING.
+2022-06-05 18:42:12,820 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (d6489ede1cf48220852ea7f22c6bafba) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:42:12,826 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (5a108d29cae78cdb7a5294ef0a3f1ee8) switched from INITIALIZING to RUNNING.
+2022-06-05 18:42:12,828 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (d6489ede1cf48220852ea7f22c6bafba) switched from INITIALIZING to RUNNING.
+2022-06-05 18:42:12,837 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (d835fd83951de1ed0dc9bb13df697df4) switched from RUNNING to FAILED on 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453).
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:?]
+	at java.net.Socket.connect(Socket.java:607) ~[?:?]
+	at org.apache.flink.streaming.api.functions.source.SocketTextStreamFunction.run(SocketTextStreamFunction.java:104) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.streaming.api.operators.StreamSource.run(StreamSource.java:110) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.streaming.api.operators.StreamSource.run(StreamSource.java:67) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.streaming.runtime.tasks.SourceStreamTask$LegacySourceFunctionThread.run(SourceStreamTask.java:323) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+2022-06-05 18:42:12,845 INFO  org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionFailoverStrategy [] - Calculating tasks to restart to recover the failed task bc764cd8ddf7a0cff126f51c16239658_0.
+2022-06-05 18:42:12,847 INFO  org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionFailoverStrategy [] - 7 tasks should be restarted to recover the failed task bc764cd8ddf7a0cff126f51c16239658_0. 
+2022-06-05 18:42:12,849 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job StreamWordCount (941987d223384dd531b1f8a4b35fb74f) switched from state RUNNING to FAILING.
+org.apache.flink.runtime.JobException: Recovery is suppressed by NoRestartBackoffTimeStrategy
+	at org.apache.flink.runtime.executiongraph.failover.flip1.ExecutionFailureHandler.handleFailure(ExecutionFailureHandler.java:138) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.executiongraph.failover.flip1.ExecutionFailureHandler.getFailureHandlingResult(ExecutionFailureHandler.java:82) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.scheduler.DefaultScheduler.handleTaskFailure(DefaultScheduler.java:252) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.scheduler.DefaultScheduler.maybeHandleTaskFailure(DefaultScheduler.java:242) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.scheduler.DefaultScheduler.updateTaskExecutionStateInternal(DefaultScheduler.java:233) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.scheduler.SchedulerBase.updateTaskExecutionState(SchedulerBase.java:684) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.scheduler.SchedulerNG.updateTaskExecutionState(SchedulerNG.java:79) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.jobmaster.JobMaster.updateTaskExecutionState(JobMaster.java:444) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at jdk.internal.reflect.GeneratedMethodAccessor43.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.lambda$handleRpcInvocation$1(AkkaRpcActor.java:316) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.runWithContextClassLoader(ClassLoadingUtils.java:83) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleRpcInvocation(AkkaRpcActor.java:314) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleRpcMessage(AkkaRpcActor.java:217) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at org.apache.flink.runtime.rpc.akka.FencedAkkaRpcActor.handleRpcMessage(FencedAkkaRpcActor.java:78) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleMessage(AkkaRpcActor.java:163) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:24) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:20) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at scala.PartialFunction.applyOrElse(PartialFunction.scala:123) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at scala.PartialFunction.applyOrElse$(PartialFunction.scala:122) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.japi.pf.UnitCaseStatement.applyOrElse(CaseStatements.scala:20) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:171) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.actor.Actor.aroundReceive(Actor.scala:537) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.actor.Actor.aroundReceive$(Actor.scala:535) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.actor.AbstractActor.aroundReceive(AbstractActor.scala:220) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:548) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) [?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020) [?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656) [?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594) [?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183) [?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:?]
+	at java.net.Socket.connect(Socket.java:607) ~[?:?]
+	at org.apache.flink.streaming.api.functions.source.SocketTextStreamFunction.run(SocketTextStreamFunction.java:104) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.streaming.api.operators.StreamSource.run(StreamSource.java:110) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.streaming.api.operators.StreamSource.run(StreamSource.java:67) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.streaming.runtime.tasks.SourceStreamTask$LegacySourceFunctionThread.run(SourceStreamTask.java:323) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+2022-06-05 18:42:12,853 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (d6489ede1cf48220852ea7f22c6bafba) switched from RUNNING to CANCELING.
+2022-06-05 18:42:12,856 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (5e700acf844a49120a8eb4d787746b82) switched from DEPLOYING to CANCELING.
+2022-06-05 18:42:12,856 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (a26bbaf890b5c6aa97bc7cc06b6f46fa) switched from DEPLOYING to CANCELING.
+2022-06-05 18:42:12,857 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (5a108d29cae78cdb7a5294ef0a3f1ee8) switched from RUNNING to CANCELING.
+2022-06-05 18:42:12,857 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (7ad7ee23abbb7d180e97bf59115d63c7) switched from DEPLOYING to CANCELING.
+2022-06-05 18:42:12,857 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (fef06ca5420cf906fc895f42cb491b95) switched from DEPLOYING to CANCELING.
+2022-06-05 18:42:12,868 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (d6489ede1cf48220852ea7f22c6bafba) switched from CANCELING to CANCELED.
+2022-06-05 18:42:12,869 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (5a108d29cae78cdb7a5294ef0a3f1ee8) switched from CANCELING to CANCELED.
+2022-06-05 18:42:12,870 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 941987d223384dd531b1f8a4b35fb74f: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=2}]
+2022-06-05 18:42:12,900 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 941987d223384dd531b1f8a4b35fb74f: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=2}]
+2022-06-05 18:42:12,912 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (fef06ca5420cf906fc895f42cb491b95) switched from CANCELING to CANCELED.
+2022-06-05 18:42:12,955 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (a26bbaf890b5c6aa97bc7cc06b6f46fa) switched from CANCELING to CANCELED.
+2022-06-05 18:42:12,955 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 941987d223384dd531b1f8a4b35fb74f: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2022-06-05 18:42:12,966 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (5e700acf844a49120a8eb4d787746b82) switched from CANCELING to CANCELED.
+2022-06-05 18:42:12,980 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 941987d223384dd531b1f8a4b35fb74f: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2022-06-05 18:42:12,980 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (7ad7ee23abbb7d180e97bf59115d63c7) switched from CANCELING to CANCELED.
+2022-06-05 18:42:12,981 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Clearing resource requirements of job 941987d223384dd531b1f8a4b35fb74f
+2022-06-05 18:42:12,981 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job StreamWordCount (941987d223384dd531b1f8a4b35fb74f) switched from state FAILING to FAILED.
+org.apache.flink.runtime.JobException: Recovery is suppressed by NoRestartBackoffTimeStrategy
+	at org.apache.flink.runtime.executiongraph.failover.flip1.ExecutionFailureHandler.handleFailure(ExecutionFailureHandler.java:138) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.executiongraph.failover.flip1.ExecutionFailureHandler.getFailureHandlingResult(ExecutionFailureHandler.java:82) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.scheduler.DefaultScheduler.handleTaskFailure(DefaultScheduler.java:252) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.scheduler.DefaultScheduler.maybeHandleTaskFailure(DefaultScheduler.java:242) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.scheduler.DefaultScheduler.updateTaskExecutionStateInternal(DefaultScheduler.java:233) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.scheduler.SchedulerBase.updateTaskExecutionState(SchedulerBase.java:684) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.scheduler.SchedulerNG.updateTaskExecutionState(SchedulerNG.java:79) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.jobmaster.JobMaster.updateTaskExecutionState(JobMaster.java:444) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at jdk.internal.reflect.GeneratedMethodAccessor43.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.lambda$handleRpcInvocation$1(AkkaRpcActor.java:316) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.runWithContextClassLoader(ClassLoadingUtils.java:83) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleRpcInvocation(AkkaRpcActor.java:314) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleRpcMessage(AkkaRpcActor.java:217) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at org.apache.flink.runtime.rpc.akka.FencedAkkaRpcActor.handleRpcMessage(FencedAkkaRpcActor.java:78) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleMessage(AkkaRpcActor.java:163) ~[flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:24) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:20) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at scala.PartialFunction.applyOrElse(PartialFunction.scala:123) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at scala.PartialFunction.applyOrElse$(PartialFunction.scala:122) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.japi.pf.UnitCaseStatement.applyOrElse(CaseStatements.scala:20) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:171) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.actor.Actor.aroundReceive(Actor.scala:537) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.actor.Actor.aroundReceive$(Actor.scala:535) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.actor.AbstractActor.aroundReceive(AbstractActor.scala:220) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:548) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243) [flink-rpc-akka_64583a7c-1931-421e-886d-4a192fdeb058.jar:1.14.4]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) [?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020) [?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656) [?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594) [?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183) [?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:?]
+	at java.net.Socket.connect(Socket.java:607) ~[?:?]
+	at org.apache.flink.streaming.api.functions.source.SocketTextStreamFunction.run(SocketTextStreamFunction.java:104) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.streaming.api.operators.StreamSource.run(StreamSource.java:110) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.streaming.api.operators.StreamSource.run(StreamSource.java:67) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.streaming.runtime.tasks.SourceStreamTask$LegacySourceFunctionThread.run(SourceStreamTask.java:323) ~[flink-dist_2.12-1.14.4.jar:1.14.4]
+2022-06-05 18:42:12,982 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - Stopping checkpoint coordinator for job 941987d223384dd531b1f8a4b35fb74f.
+2022-06-05 18:42:12,985 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Job 941987d223384dd531b1f8a4b35fb74f reached terminal state FAILED.
+org.apache.flink.runtime.JobException: Recovery is suppressed by NoRestartBackoffTimeStrategy
+	at org.apache.flink.runtime.executiongraph.failover.flip1.ExecutionFailureHandler.handleFailure(ExecutionFailureHandler.java:138)
+	at org.apache.flink.runtime.executiongraph.failover.flip1.ExecutionFailureHandler.getFailureHandlingResult(ExecutionFailureHandler.java:82)
+	at org.apache.flink.runtime.scheduler.DefaultScheduler.handleTaskFailure(DefaultScheduler.java:252)
+	at org.apache.flink.runtime.scheduler.DefaultScheduler.maybeHandleTaskFailure(DefaultScheduler.java:242)
+	at org.apache.flink.runtime.scheduler.DefaultScheduler.updateTaskExecutionStateInternal(DefaultScheduler.java:233)
+	at org.apache.flink.runtime.scheduler.SchedulerBase.updateTaskExecutionState(SchedulerBase.java:684)
+	at org.apache.flink.runtime.scheduler.SchedulerNG.updateTaskExecutionState(SchedulerNG.java:79)
+	at org.apache.flink.runtime.jobmaster.JobMaster.updateTaskExecutionState(JobMaster.java:444)
+	at jdk.internal.reflect.GeneratedMethodAccessor43.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.lambda$handleRpcInvocation$1(AkkaRpcActor.java:316)
+	at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.runWithContextClassLoader(ClassLoadingUtils.java:83)
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleRpcInvocation(AkkaRpcActor.java:314)
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleRpcMessage(AkkaRpcActor.java:217)
+	at org.apache.flink.runtime.rpc.akka.FencedAkkaRpcActor.handleRpcMessage(FencedAkkaRpcActor.java:78)
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleMessage(AkkaRpcActor.java:163)
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:24)
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:20)
+	at scala.PartialFunction.applyOrElse(PartialFunction.scala:123)
+	at scala.PartialFunction.applyOrElse$(PartialFunction.scala:122)
+	at akka.japi.pf.UnitCaseStatement.applyOrElse(CaseStatements.scala:20)
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:171)
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172)
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172)
+	at akka.actor.Actor.aroundReceive(Actor.scala:537)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:535)
+	at akka.actor.AbstractActor.aroundReceive(AbstractActor.scala:220)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:548)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.apache.flink.streaming.api.functions.source.SocketTextStreamFunction.run(SocketTextStreamFunction.java:104)
+	at org.apache.flink.streaming.api.operators.StreamSource.run(StreamSource.java:110)
+	at org.apache.flink.streaming.api.operators.StreamSource.run(StreamSource.java:67)
+	at org.apache.flink.streaming.runtime.tasks.SourceStreamTask$LegacySourceFunctionThread.run(SourceStreamTask.java:323)
+2022-06-05 18:42:12,991 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Stopping the JobMaster for job 'StreamWordCount' (941987d223384dd531b1f8a4b35fb74f).
+2022-06-05 18:42:12,991 INFO  org.apache.flink.runtime.checkpoint.StandaloneCompletedCheckpointStore [] - Shutting down
+2022-06-05 18:42:12,991 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [ed66bec8a442e208d9f67d8180c9a8d0].
+2022-06-05 18:42:12,992 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [023377f3099f9e68ae53b231a91ac340].
+2022-06-05 18:42:12,992 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [3071c48b96ba8908ee743da4209b07ba].
+2022-06-05 18:42:12,993 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Close ResourceManager connection 7d070d1f2d95b5fa9094210e17b4260e: Stopping JobMaster for job 'StreamWordCount' (941987d223384dd531b1f8a4b35fb74f).
+2022-06-05 18:42:12,993 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Disconnect job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_6 for job 941987d223384dd531b1f8a4b35fb74f from the resource manager.
+2022-06-05 18:42:46,863 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Received JobGraph submission 'StreamWordCount' (681b7af94743933f350e775cc3f6c4a3).
+2022-06-05 18:42:46,863 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Submitting job 'StreamWordCount' (681b7af94743933f350e775cc3f6c4a3).
+2022-06-05 18:42:46,865 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService             [] - Starting RPC endpoint for org.apache.flink.runtime.jobmaster.JobMaster at akka://flink/user/rpc/jobmanager_7 .
+2022-06-05 18:42:46,865 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Initializing job 'StreamWordCount' (681b7af94743933f350e775cc3f6c4a3).
+2022-06-05 18:42:46,866 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Using restart back off time strategy NoRestartBackoffTimeStrategy for StreamWordCount (681b7af94743933f350e775cc3f6c4a3).
+2022-06-05 18:42:46,867 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Running initialization on master for job StreamWordCount (681b7af94743933f350e775cc3f6c4a3).
+2022-06-05 18:42:46,867 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Successfully ran initialization on master in 0 ms.
+2022-06-05 18:42:46,868 INFO  org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology [] - Built 1 pipelined regions in 0 ms
+2022-06-05 18:42:46,868 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - No state backend has been configured, using default (HashMap) org.apache.flink.runtime.state.hashmap.HashMapStateBackend@35c4ee4e
+2022-06-05 18:42:46,868 INFO  org.apache.flink.runtime.state.StateBackendLoader            [] - State backend loader loads the state backend as HashMapStateBackend
+2022-06-05 18:42:46,868 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Checkpoint storage is set to 'jobmanager'
+2022-06-05 18:42:46,869 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - No checkpoint found during restore.
+2022-06-05 18:42:46,869 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Using failover strategy org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionFailoverStrategy@7978d6d for StreamWordCount (681b7af94743933f350e775cc3f6c4a3).
+2022-06-05 18:42:46,869 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Starting execution of job 'StreamWordCount' (681b7af94743933f350e775cc3f6c4a3) under job master id 00000000000000000000000000000000.
+2022-06-05 18:42:46,870 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Starting scheduling with scheduling strategy [org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy]
+2022-06-05 18:42:46,870 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job StreamWordCount (681b7af94743933f350e775cc3f6c4a3) switched from state CREATED to RUNNING.
+2022-06-05 18:42:46,870 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (87c9ee65acf8f19c9d50f3a91046e69f) switched from CREATED to SCHEDULED.
+2022-06-05 18:42:46,870 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (551d63d2e09b4b3efa6627210243c882) switched from CREATED to SCHEDULED.
+2022-06-05 18:42:46,870 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (c37ed6e0f65a45447023c9805f239291) switched from CREATED to SCHEDULED.
+2022-06-05 18:42:46,870 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (b17fa13226cc29391bc1655d5d456186) switched from CREATED to SCHEDULED.
+2022-06-05 18:42:46,870 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (e5c70f2dec1a896cff0aebf56b80cab2) switched from CREATED to SCHEDULED.
+2022-06-05 18:42:46,870 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (45b4dc49c78641e42b60550747d3c80d) switched from CREATED to SCHEDULED.
+2022-06-05 18:42:46,870 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (b9f8af8cf1761490f034d8feeafad18e) switched from CREATED to SCHEDULED.
+2022-06-05 18:42:46,872 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Connecting to ResourceManager akka.tcp://flink@192.168.178.56:6123/user/rpc/resourcemanager_*(00000000000000000000000000000000)
+2022-06-05 18:42:46,872 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Resolved ResourceManager address, beginning registration
+2022-06-05 18:42:46,873 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registering job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_7 for job 681b7af94743933f350e775cc3f6c4a3.
+2022-06-05 18:42:46,873 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registered job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_7 for job 681b7af94743933f350e775cc3f6c4a3.
+2022-06-05 18:42:46,873 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - JobManager successfully registered at ResourceManager, leader id: 00000000000000000000000000000000.
+2022-06-05 18:42:46,874 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 681b7af94743933f350e775cc3f6c4a3: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=3}]
+2022-06-05 18:42:46,977 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (87c9ee65acf8f19c9d50f3a91046e69f) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:42:46,977 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Socket Stream (1/1) (attempt #0) with attempt id 87c9ee65acf8f19c9d50f3a91046e69f to 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453) with allocation id 4240e183820db65d6b985439c4b1293f
+2022-06-05 18:42:46,978 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (551d63d2e09b4b3efa6627210243c882) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:42:46,978 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (1/3) (attempt #0) with attempt id 551d63d2e09b4b3efa6627210243c882 to 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453) with allocation id 4240e183820db65d6b985439c4b1293f
+2022-06-05 18:42:46,979 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (c37ed6e0f65a45447023c9805f239291) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:42:46,984 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (2/3) (attempt #0) with attempt id c37ed6e0f65a45447023c9805f239291 to 192.168.178.58:36731-ed0f0d @ Pi4.fritz.box (dataPort=37637) with allocation id dd95dadfaeee34046332db919f0b7aa6
+2022-06-05 18:42:46,985 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (b17fa13226cc29391bc1655d5d456186) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:42:46,992 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (3/3) (attempt #0) with attempt id b17fa13226cc29391bc1655d5d456186 to 192.168.178.55:40083-855cea @ Pi3.fritz.box (dataPort=38663) with allocation id bb9a5c898076f87110e10afb3d06c7f6
+2022-06-05 18:42:46,992 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (e5c70f2dec1a896cff0aebf56b80cab2) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:42:46,992 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (1/3) (attempt #0) with attempt id e5c70f2dec1a896cff0aebf56b80cab2 to 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453) with allocation id 4240e183820db65d6b985439c4b1293f
+2022-06-05 18:42:46,993 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (45b4dc49c78641e42b60550747d3c80d) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:42:46,993 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (2/3) (attempt #0) with attempt id 45b4dc49c78641e42b60550747d3c80d to 192.168.178.58:36731-ed0f0d @ Pi4.fritz.box (dataPort=37637) with allocation id dd95dadfaeee34046332db919f0b7aa6
+2022-06-05 18:42:46,993 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (b9f8af8cf1761490f034d8feeafad18e) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:42:46,994 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (3/3) (attempt #0) with attempt id b9f8af8cf1761490f034d8feeafad18e to 192.168.178.55:40083-855cea @ Pi3.fritz.box (dataPort=38663) with allocation id bb9a5c898076f87110e10afb3d06c7f6
+2022-06-05 18:42:47,022 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (e5c70f2dec1a896cff0aebf56b80cab2) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:42:47,023 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (87c9ee65acf8f19c9d50f3a91046e69f) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:42:47,029 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (87c9ee65acf8f19c9d50f3a91046e69f) switched from INITIALIZING to RUNNING.
+2022-06-05 18:42:47,033 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (551d63d2e09b4b3efa6627210243c882) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:42:47,040 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (45b4dc49c78641e42b60550747d3c80d) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:42:47,044 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (551d63d2e09b4b3efa6627210243c882) switched from INITIALIZING to RUNNING.
+2022-06-05 18:42:47,045 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (e5c70f2dec1a896cff0aebf56b80cab2) switched from INITIALIZING to RUNNING.
+2022-06-05 18:42:47,054 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (c37ed6e0f65a45447023c9805f239291) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:42:47,056 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (87c9ee65acf8f19c9d50f3a91046e69f) switched from RUNNING to FINISHED.
+2022-06-05 18:42:47,057 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (551d63d2e09b4b3efa6627210243c882) switched from RUNNING to FINISHED.
+2022-06-05 18:42:47,094 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (c37ed6e0f65a45447023c9805f239291) switched from INITIALIZING to RUNNING.
+2022-06-05 18:42:47,099 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (b9f8af8cf1761490f034d8feeafad18e) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:42:47,103 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (45b4dc49c78641e42b60550747d3c80d) switched from INITIALIZING to RUNNING.
+2022-06-05 18:42:47,145 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (c37ed6e0f65a45447023c9805f239291) switched from RUNNING to FINISHED.
+2022-06-05 18:42:47,156 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (b17fa13226cc29391bc1655d5d456186) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:42:47,227 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (b9f8af8cf1761490f034d8feeafad18e) switched from INITIALIZING to RUNNING.
+2022-06-05 18:42:47,240 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (b17fa13226cc29391bc1655d5d456186) switched from INITIALIZING to RUNNING.
+2022-06-05 18:42:47,360 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (b17fa13226cc29391bc1655d5d456186) switched from RUNNING to FINISHED.
+2022-06-05 18:42:47,370 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (b9f8af8cf1761490f034d8feeafad18e) switched from RUNNING to FINISHED.
+2022-06-05 18:42:47,371 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 681b7af94743933f350e775cc3f6c4a3: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=2}]
+2022-06-05 18:42:47,380 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (e5c70f2dec1a896cff0aebf56b80cab2) switched from RUNNING to FINISHED.
+2022-06-05 18:42:47,381 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 681b7af94743933f350e775cc3f6c4a3: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2022-06-05 18:42:47,384 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (45b4dc49c78641e42b60550747d3c80d) switched from RUNNING to FINISHED.
+2022-06-05 18:42:47,384 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job StreamWordCount (681b7af94743933f350e775cc3f6c4a3) switched from state RUNNING to FINISHED.
+2022-06-05 18:42:47,384 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Clearing resource requirements of job 681b7af94743933f350e775cc3f6c4a3
+2022-06-05 18:42:47,384 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - Stopping checkpoint coordinator for job 681b7af94743933f350e775cc3f6c4a3.
+2022-06-05 18:42:47,385 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Job 681b7af94743933f350e775cc3f6c4a3 reached terminal state FINISHED.
+2022-06-05 18:42:47,386 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Stopping the JobMaster for job 'StreamWordCount' (681b7af94743933f350e775cc3f6c4a3).
+2022-06-05 18:42:47,387 INFO  org.apache.flink.runtime.checkpoint.StandaloneCompletedCheckpointStore [] - Shutting down
+2022-06-05 18:42:47,387 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [bb9a5c898076f87110e10afb3d06c7f6].
+2022-06-05 18:42:47,387 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [4240e183820db65d6b985439c4b1293f].
+2022-06-05 18:42:47,388 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [dd95dadfaeee34046332db919f0b7aa6].
+2022-06-05 18:42:47,388 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Close ResourceManager connection 7d070d1f2d95b5fa9094210e17b4260e: Stopping JobMaster for job 'StreamWordCount' (681b7af94743933f350e775cc3f6c4a3).
+2022-06-05 18:42:47,388 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Disconnect job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_7 for job 681b7af94743933f350e775cc3f6c4a3 from the resource manager.
+2022-06-05 18:43:58,878 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Received JobGraph submission 'StreamWordCount' (caa503fce49a556f37b8bec2eadcde10).
+2022-06-05 18:43:58,878 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Submitting job 'StreamWordCount' (caa503fce49a556f37b8bec2eadcde10).
+2022-06-05 18:43:58,880 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService             [] - Starting RPC endpoint for org.apache.flink.runtime.jobmaster.JobMaster at akka://flink/user/rpc/jobmanager_8 .
+2022-06-05 18:43:58,881 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Initializing job 'StreamWordCount' (caa503fce49a556f37b8bec2eadcde10).
+2022-06-05 18:43:58,881 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Using restart back off time strategy NoRestartBackoffTimeStrategy for StreamWordCount (caa503fce49a556f37b8bec2eadcde10).
+2022-06-05 18:43:58,882 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Running initialization on master for job StreamWordCount (caa503fce49a556f37b8bec2eadcde10).
+2022-06-05 18:43:58,882 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Successfully ran initialization on master in 0 ms.
+2022-06-05 18:43:58,883 INFO  org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology [] - Built 1 pipelined regions in 0 ms
+2022-06-05 18:43:58,884 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - No state backend has been configured, using default (HashMap) org.apache.flink.runtime.state.hashmap.HashMapStateBackend@76d80634
+2022-06-05 18:43:58,884 INFO  org.apache.flink.runtime.state.StateBackendLoader            [] - State backend loader loads the state backend as HashMapStateBackend
+2022-06-05 18:43:58,884 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Checkpoint storage is set to 'jobmanager'
+2022-06-05 18:43:58,885 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - No checkpoint found during restore.
+2022-06-05 18:43:58,885 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Using failover strategy org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionFailoverStrategy@46cc892f for StreamWordCount (caa503fce49a556f37b8bec2eadcde10).
+2022-06-05 18:43:58,885 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Starting execution of job 'StreamWordCount' (caa503fce49a556f37b8bec2eadcde10) under job master id 00000000000000000000000000000000.
+2022-06-05 18:43:58,886 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Starting scheduling with scheduling strategy [org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy]
+2022-06-05 18:43:58,886 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job StreamWordCount (caa503fce49a556f37b8bec2eadcde10) switched from state CREATED to RUNNING.
+2022-06-05 18:43:58,886 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (2acd55d903eaed8b348cdbfb09ed927d) switched from CREATED to SCHEDULED.
+2022-06-05 18:43:58,886 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (b7260a65b58984c12966c63d3a92d755) switched from CREATED to SCHEDULED.
+2022-06-05 18:43:58,886 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (bfcb68e765ba701748320735cacc071d) switched from CREATED to SCHEDULED.
+2022-06-05 18:43:58,886 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (a406568f59c11f0a4972172c58c85271) switched from CREATED to SCHEDULED.
+2022-06-05 18:43:58,886 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (f2fb62f05ab60595ac83125f3e7a90f8) switched from CREATED to SCHEDULED.
+2022-06-05 18:43:58,886 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (b3ea25bfcf6fa0a1ccc0d66d87d89cfb) switched from CREATED to SCHEDULED.
+2022-06-05 18:43:58,886 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (efde34de9d92cdbb563811f8597c5437) switched from CREATED to SCHEDULED.
+2022-06-05 18:43:58,887 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Connecting to ResourceManager akka.tcp://flink@192.168.178.56:6123/user/rpc/resourcemanager_*(00000000000000000000000000000000)
+2022-06-05 18:43:58,888 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Resolved ResourceManager address, beginning registration
+2022-06-05 18:43:58,889 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registering job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_8 for job caa503fce49a556f37b8bec2eadcde10.
+2022-06-05 18:43:58,890 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registered job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_8 for job caa503fce49a556f37b8bec2eadcde10.
+2022-06-05 18:43:58,890 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - JobManager successfully registered at ResourceManager, leader id: 00000000000000000000000000000000.
+2022-06-05 18:43:58,890 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job caa503fce49a556f37b8bec2eadcde10: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=3}]
+2022-06-05 18:43:59,060 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (2acd55d903eaed8b348cdbfb09ed927d) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:43:59,060 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Socket Stream (1/1) (attempt #0) with attempt id 2acd55d903eaed8b348cdbfb09ed927d to 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453) with allocation id 77e294f490759d74371382f6e0eb68f2
+2022-06-05 18:43:59,061 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (b7260a65b58984c12966c63d3a92d755) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:43:59,061 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (1/3) (attempt #0) with attempt id b7260a65b58984c12966c63d3a92d755 to 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453) with allocation id 77e294f490759d74371382f6e0eb68f2
+2022-06-05 18:43:59,061 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (bfcb68e765ba701748320735cacc071d) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:43:59,066 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (2/3) (attempt #0) with attempt id bfcb68e765ba701748320735cacc071d to 192.168.178.58:36731-ed0f0d @ Pi4.fritz.box (dataPort=37637) with allocation id 3e362a4633a282f7b204e5eb7c837fce
+2022-06-05 18:43:59,066 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (a406568f59c11f0a4972172c58c85271) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:43:59,073 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (3/3) (attempt #0) with attempt id a406568f59c11f0a4972172c58c85271 to 192.168.178.55:40083-855cea @ Pi3.fritz.box (dataPort=38663) with allocation id 557258a4b5a840a1083525ccfd677b01
+2022-06-05 18:43:59,073 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (f2fb62f05ab60595ac83125f3e7a90f8) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:43:59,073 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (1/3) (attempt #0) with attempt id f2fb62f05ab60595ac83125f3e7a90f8 to 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453) with allocation id 77e294f490759d74371382f6e0eb68f2
+2022-06-05 18:43:59,074 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (b3ea25bfcf6fa0a1ccc0d66d87d89cfb) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:43:59,074 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (2/3) (attempt #0) with attempt id b3ea25bfcf6fa0a1ccc0d66d87d89cfb to 192.168.178.58:36731-ed0f0d @ Pi4.fritz.box (dataPort=37637) with allocation id 3e362a4633a282f7b204e5eb7c837fce
+2022-06-05 18:43:59,075 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (efde34de9d92cdbb563811f8597c5437) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:43:59,076 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (3/3) (attempt #0) with attempt id efde34de9d92cdbb563811f8597c5437 to 192.168.178.55:40083-855cea @ Pi3.fritz.box (dataPort=38663) with allocation id 557258a4b5a840a1083525ccfd677b01
+2022-06-05 18:43:59,102 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (f2fb62f05ab60595ac83125f3e7a90f8) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:43:59,102 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (2acd55d903eaed8b348cdbfb09ed927d) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:43:59,103 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (2acd55d903eaed8b348cdbfb09ed927d) switched from INITIALIZING to RUNNING.
+2022-06-05 18:43:59,104 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (b7260a65b58984c12966c63d3a92d755) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:43:59,114 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (b7260a65b58984c12966c63d3a92d755) switched from INITIALIZING to RUNNING.
+2022-06-05 18:43:59,116 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (f2fb62f05ab60595ac83125f3e7a90f8) switched from INITIALIZING to RUNNING.
+2022-06-05 18:43:59,119 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (b3ea25bfcf6fa0a1ccc0d66d87d89cfb) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:43:59,132 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (bfcb68e765ba701748320735cacc071d) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:43:59,135 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (2acd55d903eaed8b348cdbfb09ed927d) switched from RUNNING to FINISHED.
+2022-06-05 18:43:59,135 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (b7260a65b58984c12966c63d3a92d755) switched from RUNNING to FINISHED.
+2022-06-05 18:43:59,164 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (bfcb68e765ba701748320735cacc071d) switched from INITIALIZING to RUNNING.
+2022-06-05 18:43:59,183 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (efde34de9d92cdbb563811f8597c5437) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:43:59,194 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (b3ea25bfcf6fa0a1ccc0d66d87d89cfb) switched from INITIALIZING to RUNNING.
+2022-06-05 18:43:59,214 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (a406568f59c11f0a4972172c58c85271) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:43:59,229 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (bfcb68e765ba701748320735cacc071d) switched from RUNNING to FINISHED.
+2022-06-05 18:43:59,299 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (a406568f59c11f0a4972172c58c85271) switched from INITIALIZING to RUNNING.
+2022-06-05 18:43:59,330 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (efde34de9d92cdbb563811f8597c5437) switched from INITIALIZING to RUNNING.
+2022-06-05 18:43:59,412 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (b3ea25bfcf6fa0a1ccc0d66d87d89cfb) switched from RUNNING to FINISHED.
+2022-06-05 18:43:59,413 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job caa503fce49a556f37b8bec2eadcde10: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=2}]
+2022-06-05 18:43:59,416 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (a406568f59c11f0a4972172c58c85271) switched from RUNNING to FINISHED.
+2022-06-05 18:43:59,418 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (f2fb62f05ab60595ac83125f3e7a90f8) switched from RUNNING to FINISHED.
+2022-06-05 18:43:59,419 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job caa503fce49a556f37b8bec2eadcde10: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2022-06-05 18:43:59,440 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job caa503fce49a556f37b8bec2eadcde10: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2022-06-05 18:43:59,470 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (efde34de9d92cdbb563811f8597c5437) switched from RUNNING to FINISHED.
+2022-06-05 18:43:59,471 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job StreamWordCount (caa503fce49a556f37b8bec2eadcde10) switched from state RUNNING to FINISHED.
+2022-06-05 18:43:59,471 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Clearing resource requirements of job caa503fce49a556f37b8bec2eadcde10
+2022-06-05 18:43:59,471 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - Stopping checkpoint coordinator for job caa503fce49a556f37b8bec2eadcde10.
+2022-06-05 18:43:59,472 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Job caa503fce49a556f37b8bec2eadcde10 reached terminal state FINISHED.
+2022-06-05 18:43:59,473 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Stopping the JobMaster for job 'StreamWordCount' (caa503fce49a556f37b8bec2eadcde10).
+2022-06-05 18:43:59,473 INFO  org.apache.flink.runtime.checkpoint.StandaloneCompletedCheckpointStore [] - Shutting down
+2022-06-05 18:43:59,474 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [557258a4b5a840a1083525ccfd677b01].
+2022-06-05 18:43:59,474 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [77e294f490759d74371382f6e0eb68f2].
+2022-06-05 18:43:59,475 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [3e362a4633a282f7b204e5eb7c837fce].
+2022-06-05 18:43:59,475 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Close ResourceManager connection 7d070d1f2d95b5fa9094210e17b4260e: Stopping JobMaster for job 'StreamWordCount' (caa503fce49a556f37b8bec2eadcde10).
+2022-06-05 18:43:59,476 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Disconnect job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_8 for job caa503fce49a556f37b8bec2eadcde10 from the resource manager.
+2022-06-05 18:46:22,845 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Received JobGraph submission 'StreamWordCount' (a13f7e87c5d7fe2cf34f1ab910a953d9).
+2022-06-05 18:46:22,845 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Submitting job 'StreamWordCount' (a13f7e87c5d7fe2cf34f1ab910a953d9).
+2022-06-05 18:46:22,848 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService             [] - Starting RPC endpoint for org.apache.flink.runtime.jobmaster.JobMaster at akka://flink/user/rpc/jobmanager_9 .
+2022-06-05 18:46:22,848 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Initializing job 'StreamWordCount' (a13f7e87c5d7fe2cf34f1ab910a953d9).
+2022-06-05 18:46:22,849 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Using restart back off time strategy NoRestartBackoffTimeStrategy for StreamWordCount (a13f7e87c5d7fe2cf34f1ab910a953d9).
+2022-06-05 18:46:22,849 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Running initialization on master for job StreamWordCount (a13f7e87c5d7fe2cf34f1ab910a953d9).
+2022-06-05 18:46:22,849 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Successfully ran initialization on master in 0 ms.
+2022-06-05 18:46:22,850 INFO  org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology [] - Built 1 pipelined regions in 0 ms
+2022-06-05 18:46:22,851 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - No state backend has been configured, using default (HashMap) org.apache.flink.runtime.state.hashmap.HashMapStateBackend@35a73411
+2022-06-05 18:46:22,851 INFO  org.apache.flink.runtime.state.StateBackendLoader            [] - State backend loader loads the state backend as HashMapStateBackend
+2022-06-05 18:46:22,851 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Checkpoint storage is set to 'jobmanager'
+2022-06-05 18:46:22,851 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - No checkpoint found during restore.
+2022-06-05 18:46:22,852 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Using failover strategy org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionFailoverStrategy@662a106b for StreamWordCount (a13f7e87c5d7fe2cf34f1ab910a953d9).
+2022-06-05 18:46:22,852 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Starting execution of job 'StreamWordCount' (a13f7e87c5d7fe2cf34f1ab910a953d9) under job master id 00000000000000000000000000000000.
+2022-06-05 18:46:22,855 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Starting scheduling with scheduling strategy [org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy]
+2022-06-05 18:46:22,855 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job StreamWordCount (a13f7e87c5d7fe2cf34f1ab910a953d9) switched from state CREATED to RUNNING.
+2022-06-05 18:46:22,856 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (38e8512717bcba370b9a54e56d6423f0) switched from CREATED to SCHEDULED.
+2022-06-05 18:46:22,856 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (95a73f17eba39127dd5c3f468dd217c0) switched from CREATED to SCHEDULED.
+2022-06-05 18:46:22,856 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (f86cf9f9038bcbe5a0fead814e4342c4) switched from CREATED to SCHEDULED.
+2022-06-05 18:46:22,856 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (ee06141d7b37aa34595a6996ca5ce446) switched from CREATED to SCHEDULED.
+2022-06-05 18:46:22,856 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (bcd70ad1158e810ac1dd4fde1b05ee14) switched from CREATED to SCHEDULED.
+2022-06-05 18:46:22,856 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (e6f8159ba95b12834b8af9e2eb689f97) switched from CREATED to SCHEDULED.
+2022-06-05 18:46:22,856 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (5ba825c78682f11884a2b38aea0a3e23) switched from CREATED to SCHEDULED.
+2022-06-05 18:46:22,857 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Connecting to ResourceManager akka.tcp://flink@192.168.178.56:6123/user/rpc/resourcemanager_*(00000000000000000000000000000000)
+2022-06-05 18:46:22,859 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Resolved ResourceManager address, beginning registration
+2022-06-05 18:46:22,859 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registering job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_9 for job a13f7e87c5d7fe2cf34f1ab910a953d9.
+2022-06-05 18:46:22,860 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registered job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_9 for job a13f7e87c5d7fe2cf34f1ab910a953d9.
+2022-06-05 18:46:22,860 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - JobManager successfully registered at ResourceManager, leader id: 00000000000000000000000000000000.
+2022-06-05 18:46:22,860 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job a13f7e87c5d7fe2cf34f1ab910a953d9: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=3}]
+2022-06-05 18:46:22,937 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (38e8512717bcba370b9a54e56d6423f0) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:46:22,937 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Socket Stream (1/1) (attempt #0) with attempt id 38e8512717bcba370b9a54e56d6423f0 to 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453) with allocation id 928e1da7af1236b20c3e83320af3e80b
+2022-06-05 18:46:22,938 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (95a73f17eba39127dd5c3f468dd217c0) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:46:22,938 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (1/3) (attempt #0) with attempt id 95a73f17eba39127dd5c3f468dd217c0 to 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453) with allocation id 928e1da7af1236b20c3e83320af3e80b
+2022-06-05 18:46:22,938 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (f86cf9f9038bcbe5a0fead814e4342c4) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:46:22,943 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (2/3) (attempt #0) with attempt id f86cf9f9038bcbe5a0fead814e4342c4 to 192.168.178.58:36731-ed0f0d @ Pi4.fritz.box (dataPort=37637) with allocation id be8d1e9f6cf65d36eeb90de95ffdfc46
+2022-06-05 18:46:22,944 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (ee06141d7b37aa34595a6996ca5ce446) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:46:22,951 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (3/3) (attempt #0) with attempt id ee06141d7b37aa34595a6996ca5ce446 to 192.168.178.55:40083-855cea @ Pi3.fritz.box (dataPort=38663) with allocation id b4804797c2d18dccb68eab03d13e9e83
+2022-06-05 18:46:22,951 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (bcd70ad1158e810ac1dd4fde1b05ee14) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:46:22,951 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (1/3) (attempt #0) with attempt id bcd70ad1158e810ac1dd4fde1b05ee14 to 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453) with allocation id 928e1da7af1236b20c3e83320af3e80b
+2022-06-05 18:46:22,952 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (e6f8159ba95b12834b8af9e2eb689f97) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:46:22,952 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (2/3) (attempt #0) with attempt id e6f8159ba95b12834b8af9e2eb689f97 to 192.168.178.58:36731-ed0f0d @ Pi4.fritz.box (dataPort=37637) with allocation id be8d1e9f6cf65d36eeb90de95ffdfc46
+2022-06-05 18:46:22,952 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (5ba825c78682f11884a2b38aea0a3e23) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:46:22,952 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (3/3) (attempt #0) with attempt id 5ba825c78682f11884a2b38aea0a3e23 to 192.168.178.55:40083-855cea @ Pi3.fritz.box (dataPort=38663) with allocation id b4804797c2d18dccb68eab03d13e9e83
+2022-06-05 18:46:22,979 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (bcd70ad1158e810ac1dd4fde1b05ee14) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:46:22,979 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (38e8512717bcba370b9a54e56d6423f0) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:46:22,983 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (38e8512717bcba370b9a54e56d6423f0) switched from INITIALIZING to RUNNING.
+2022-06-05 18:46:22,985 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (95a73f17eba39127dd5c3f468dd217c0) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:46:22,992 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (bcd70ad1158e810ac1dd4fde1b05ee14) switched from INITIALIZING to RUNNING.
+2022-06-05 18:46:22,994 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (95a73f17eba39127dd5c3f468dd217c0) switched from INITIALIZING to RUNNING.
+2022-06-05 18:46:22,999 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (e6f8159ba95b12834b8af9e2eb689f97) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:46:23,004 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (38e8512717bcba370b9a54e56d6423f0) switched from RUNNING to FINISHED.
+2022-06-05 18:46:23,005 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (95a73f17eba39127dd5c3f468dd217c0) switched from RUNNING to FINISHED.
+2022-06-05 18:46:23,011 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (f86cf9f9038bcbe5a0fead814e4342c4) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:46:23,049 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (e6f8159ba95b12834b8af9e2eb689f97) switched from INITIALIZING to RUNNING.
+2022-06-05 18:46:23,056 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (f86cf9f9038bcbe5a0fead814e4342c4) switched from INITIALIZING to RUNNING.
+2022-06-05 18:46:23,060 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (5ba825c78682f11884a2b38aea0a3e23) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:46:23,074 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (ee06141d7b37aa34595a6996ca5ce446) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:46:23,101 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (f86cf9f9038bcbe5a0fead814e4342c4) switched from RUNNING to FINISHED.
+2022-06-05 18:46:23,145 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (ee06141d7b37aa34595a6996ca5ce446) switched from INITIALIZING to RUNNING.
+2022-06-05 18:46:23,171 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (5ba825c78682f11884a2b38aea0a3e23) switched from INITIALIZING to RUNNING.
+2022-06-05 18:46:23,219 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (e6f8159ba95b12834b8af9e2eb689f97) switched from RUNNING to FINISHED.
+2022-06-05 18:46:23,220 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job a13f7e87c5d7fe2cf34f1ab910a953d9: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=2}]
+2022-06-05 18:46:23,224 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (bcd70ad1158e810ac1dd4fde1b05ee14) switched from RUNNING to FINISHED.
+2022-06-05 18:46:23,224 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job a13f7e87c5d7fe2cf34f1ab910a953d9: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2022-06-05 18:46:23,226 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (ee06141d7b37aa34595a6996ca5ce446) switched from RUNNING to FINISHED.
+2022-06-05 18:46:23,250 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job a13f7e87c5d7fe2cf34f1ab910a953d9: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2022-06-05 18:46:23,264 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (5ba825c78682f11884a2b38aea0a3e23) switched from RUNNING to FINISHED.
+2022-06-05 18:46:23,265 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job StreamWordCount (a13f7e87c5d7fe2cf34f1ab910a953d9) switched from state RUNNING to FINISHED.
+2022-06-05 18:46:23,265 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Clearing resource requirements of job a13f7e87c5d7fe2cf34f1ab910a953d9
+2022-06-05 18:46:23,265 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - Stopping checkpoint coordinator for job a13f7e87c5d7fe2cf34f1ab910a953d9.
+2022-06-05 18:46:23,265 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Job a13f7e87c5d7fe2cf34f1ab910a953d9 reached terminal state FINISHED.
+2022-06-05 18:46:23,267 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Stopping the JobMaster for job 'StreamWordCount' (a13f7e87c5d7fe2cf34f1ab910a953d9).
+2022-06-05 18:46:23,268 INFO  org.apache.flink.runtime.checkpoint.StandaloneCompletedCheckpointStore [] - Shutting down
+2022-06-05 18:46:23,268 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [b4804797c2d18dccb68eab03d13e9e83].
+2022-06-05 18:46:23,270 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [928e1da7af1236b20c3e83320af3e80b].
+2022-06-05 18:46:23,271 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [be8d1e9f6cf65d36eeb90de95ffdfc46].
+2022-06-05 18:46:23,273 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Close ResourceManager connection 7d070d1f2d95b5fa9094210e17b4260e: Stopping JobMaster for job 'StreamWordCount' (a13f7e87c5d7fe2cf34f1ab910a953d9).
+2022-06-05 18:46:23,273 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Disconnect job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_9 for job a13f7e87c5d7fe2cf34f1ab910a953d9 from the resource manager.
+2022-06-05 18:48:52,603 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Received JobGraph submission 'StreamWordCount' (9a507dcc3be071eb2a15efeb1be0af7d).
+2022-06-05 18:48:52,603 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Submitting job 'StreamWordCount' (9a507dcc3be071eb2a15efeb1be0af7d).
+2022-06-05 18:48:52,607 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService             [] - Starting RPC endpoint for org.apache.flink.runtime.jobmaster.JobMaster at akka://flink/user/rpc/jobmanager_10 .
+2022-06-05 18:48:52,607 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Initializing job 'StreamWordCount' (9a507dcc3be071eb2a15efeb1be0af7d).
+2022-06-05 18:48:52,608 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Using restart back off time strategy NoRestartBackoffTimeStrategy for StreamWordCount (9a507dcc3be071eb2a15efeb1be0af7d).
+2022-06-05 18:48:52,608 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Running initialization on master for job StreamWordCount (9a507dcc3be071eb2a15efeb1be0af7d).
+2022-06-05 18:48:52,608 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Successfully ran initialization on master in 0 ms.
+2022-06-05 18:48:52,609 INFO  org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology [] - Built 1 pipelined regions in 0 ms
+2022-06-05 18:48:52,639 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - No state backend has been configured, using default (HashMap) org.apache.flink.runtime.state.hashmap.HashMapStateBackend@78d10b1c
+2022-06-05 18:48:52,639 INFO  org.apache.flink.runtime.state.StateBackendLoader            [] - State backend loader loads the state backend as HashMapStateBackend
+2022-06-05 18:48:52,639 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Checkpoint storage is set to 'jobmanager'
+2022-06-05 18:48:52,640 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - No checkpoint found during restore.
+2022-06-05 18:48:52,640 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Using failover strategy org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionFailoverStrategy@279a91cb for StreamWordCount (9a507dcc3be071eb2a15efeb1be0af7d).
+2022-06-05 18:48:52,640 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Starting execution of job 'StreamWordCount' (9a507dcc3be071eb2a15efeb1be0af7d) under job master id 00000000000000000000000000000000.
+2022-06-05 18:48:52,642 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Starting scheduling with scheduling strategy [org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy]
+2022-06-05 18:48:52,643 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job StreamWordCount (9a507dcc3be071eb2a15efeb1be0af7d) switched from state CREATED to RUNNING.
+2022-06-05 18:48:52,643 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (b1dae5dce9c2391204f72b20a914856b) switched from CREATED to SCHEDULED.
+2022-06-05 18:48:52,643 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (fa5d56ec08d72b1eb09b925edf41faa7) switched from CREATED to SCHEDULED.
+2022-06-05 18:48:52,643 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (44a5efee6439827d65c4004767d375b7) switched from CREATED to SCHEDULED.
+2022-06-05 18:48:52,643 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (2bafc7eaad5377845a1c9aab3d58ed63) switched from CREATED to SCHEDULED.
+2022-06-05 18:48:52,643 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (fb360a75b64c9d76e5ff9905aed1d372) switched from CREATED to SCHEDULED.
+2022-06-05 18:48:52,643 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (59e1c87a7dcbddf334e78ce0a18fbf3b) switched from CREATED to SCHEDULED.
+2022-06-05 18:48:52,643 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (947d9139171937ad53134c782c00ad7c) switched from CREATED to SCHEDULED.
+2022-06-05 18:48:52,644 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Connecting to ResourceManager akka.tcp://flink@192.168.178.56:6123/user/rpc/resourcemanager_*(00000000000000000000000000000000)
+2022-06-05 18:48:52,646 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Resolved ResourceManager address, beginning registration
+2022-06-05 18:48:52,647 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registering job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_10 for job 9a507dcc3be071eb2a15efeb1be0af7d.
+2022-06-05 18:48:52,647 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registered job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_10 for job 9a507dcc3be071eb2a15efeb1be0af7d.
+2022-06-05 18:48:52,648 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - JobManager successfully registered at ResourceManager, leader id: 00000000000000000000000000000000.
+2022-06-05 18:48:52,648 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 9a507dcc3be071eb2a15efeb1be0af7d: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=3}]
+2022-06-05 18:48:52,740 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (b1dae5dce9c2391204f72b20a914856b) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:48:52,741 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Socket Stream (1/1) (attempt #0) with attempt id b1dae5dce9c2391204f72b20a914856b to 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453) with allocation id e1512acb38652988b84e474da5ab9402
+2022-06-05 18:48:52,741 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (fa5d56ec08d72b1eb09b925edf41faa7) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:48:52,741 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (1/3) (attempt #0) with attempt id fa5d56ec08d72b1eb09b925edf41faa7 to 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453) with allocation id e1512acb38652988b84e474da5ab9402
+2022-06-05 18:48:52,742 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (44a5efee6439827d65c4004767d375b7) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:48:52,749 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (2/3) (attempt #0) with attempt id 44a5efee6439827d65c4004767d375b7 to 192.168.178.58:36731-ed0f0d @ Pi4.fritz.box (dataPort=37637) with allocation id 665c6c5f63541d4f778235c550dcb6b5
+2022-06-05 18:48:52,749 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (2bafc7eaad5377845a1c9aab3d58ed63) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:48:52,761 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Flat Map -> Map (3/3) (attempt #0) with attempt id 2bafc7eaad5377845a1c9aab3d58ed63 to 192.168.178.55:40083-855cea @ Pi3.fritz.box (dataPort=38663) with allocation id 912507cd1ed761db58f1563a8612b96f
+2022-06-05 18:48:52,762 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (fb360a75b64c9d76e5ff9905aed1d372) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:48:52,762 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (1/3) (attempt #0) with attempt id fb360a75b64c9d76e5ff9905aed1d372 to 192.168.178.57:33449-46080e @ flink-worker-surface (dataPort=36453) with allocation id e1512acb38652988b84e474da5ab9402
+2022-06-05 18:48:52,763 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (59e1c87a7dcbddf334e78ce0a18fbf3b) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:48:52,763 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (2/3) (attempt #0) with attempt id 59e1c87a7dcbddf334e78ce0a18fbf3b to 192.168.178.58:36731-ed0f0d @ Pi4.fritz.box (dataPort=37637) with allocation id 665c6c5f63541d4f778235c550dcb6b5
+2022-06-05 18:48:52,764 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (947d9139171937ad53134c782c00ad7c) switched from SCHEDULED to DEPLOYING.
+2022-06-05 18:48:52,764 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> Sink: Print-sink (output) (3/3) (attempt #0) with attempt id 947d9139171937ad53134c782c00ad7c to 192.168.178.55:40083-855cea @ Pi3.fritz.box (dataPort=38663) with allocation id 912507cd1ed761db58f1563a8612b96f
+2022-06-05 18:48:52,811 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (59e1c87a7dcbddf334e78ce0a18fbf3b) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:48:52,822 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (b1dae5dce9c2391204f72b20a914856b) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:48:52,822 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (fb360a75b64c9d76e5ff9905aed1d372) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:48:52,829 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (b1dae5dce9c2391204f72b20a914856b) switched from INITIALIZING to RUNNING.
+2022-06-05 18:48:52,830 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (fa5d56ec08d72b1eb09b925edf41faa7) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:48:52,832 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (44a5efee6439827d65c4004767d375b7) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:48:52,837 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (fb360a75b64c9d76e5ff9905aed1d372) switched from INITIALIZING to RUNNING.
+2022-06-05 18:48:52,842 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (fa5d56ec08d72b1eb09b925edf41faa7) switched from INITIALIZING to RUNNING.
+2022-06-05 18:48:52,843 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Socket Stream (1/1) (b1dae5dce9c2391204f72b20a914856b) switched from RUNNING to FINISHED.
+2022-06-05 18:48:52,845 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (1/3) (fa5d56ec08d72b1eb09b925edf41faa7) switched from RUNNING to FINISHED.
+2022-06-05 18:48:52,850 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (947d9139171937ad53134c782c00ad7c) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:48:52,874 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (2bafc7eaad5377845a1c9aab3d58ed63) switched from DEPLOYING to INITIALIZING.
+2022-06-05 18:48:52,881 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (44a5efee6439827d65c4004767d375b7) switched from INITIALIZING to RUNNING.
+2022-06-05 18:48:52,889 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (59e1c87a7dcbddf334e78ce0a18fbf3b) switched from INITIALIZING to RUNNING.
+2022-06-05 18:48:52,936 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (947d9139171937ad53134c782c00ad7c) switched from INITIALIZING to RUNNING.
+2022-06-05 18:48:52,938 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (2/3) (44a5efee6439827d65c4004767d375b7) switched from RUNNING to FINISHED.
+2022-06-05 18:48:52,947 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (2bafc7eaad5377845a1c9aab3d58ed63) switched from INITIALIZING to RUNNING.
+2022-06-05 18:48:53,051 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Flat Map -> Map (3/3) (2bafc7eaad5377845a1c9aab3d58ed63) switched from RUNNING to FINISHED.
+2022-06-05 18:48:53,065 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (1/3) (fb360a75b64c9d76e5ff9905aed1d372) switched from RUNNING to FINISHED.
+2022-06-05 18:48:53,066 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 9a507dcc3be071eb2a15efeb1be0af7d: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=2}]
+2022-06-05 18:48:53,086 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (2/3) (59e1c87a7dcbddf334e78ce0a18fbf3b) switched from RUNNING to FINISHED.
+2022-06-05 18:48:53,087 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 9a507dcc3be071eb2a15efeb1be0af7d: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2022-06-05 18:48:53,110 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 9a507dcc3be071eb2a15efeb1be0af7d: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2022-06-05 18:48:53,137 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> Sink: Print-sink (output) (3/3) (947d9139171937ad53134c782c00ad7c) switched from RUNNING to FINISHED.
+2022-06-05 18:48:53,137 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job StreamWordCount (9a507dcc3be071eb2a15efeb1be0af7d) switched from state RUNNING to FINISHED.
+2022-06-05 18:48:53,137 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Clearing resource requirements of job 9a507dcc3be071eb2a15efeb1be0af7d
+2022-06-05 18:48:53,137 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - Stopping checkpoint coordinator for job 9a507dcc3be071eb2a15efeb1be0af7d.
+2022-06-05 18:48:53,138 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Job 9a507dcc3be071eb2a15efeb1be0af7d reached terminal state FINISHED.
+2022-06-05 18:48:53,139 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Stopping the JobMaster for job 'StreamWordCount' (9a507dcc3be071eb2a15efeb1be0af7d).
+2022-06-05 18:48:53,139 INFO  org.apache.flink.runtime.checkpoint.StandaloneCompletedCheckpointStore [] - Shutting down
+2022-06-05 18:48:53,139 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [912507cd1ed761db58f1563a8612b96f].
+2022-06-05 18:48:53,140 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [e1512acb38652988b84e474da5ab9402].
+2022-06-05 18:48:53,141 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [665c6c5f63541d4f778235c550dcb6b5].
+2022-06-05 18:48:53,141 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Close ResourceManager connection 7d070d1f2d95b5fa9094210e17b4260e: Stopping JobMaster for job 'StreamWordCount' (9a507dcc3be071eb2a15efeb1be0af7d).
+2022-06-05 18:48:53,142 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Disconnect job manager 00000000000000000000000000000000@akka.tcp://flink@192.168.178.56:6123/user/rpc/jobmanager_10 for job 9a507dcc3be071eb2a15efeb1be0af7d from the resource manager.
+2022-06-05 18:51:13,686 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - RECEIVED SIGNAL 2: SIGINT. Shutting down as requested.
+2022-06-05 18:51:13,689 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - Shutting StandaloneSessionClusterEntrypoint down with application status UNKNOWN. Diagnostics Cluster entrypoint has been closed externally..
+2022-06-05 18:51:13,690 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - Shutting down rest endpoint.
+2022-06-05 18:51:13,691 INFO  org.apache.flink.runtime.blob.BlobServer                     [] - Stopped BLOB server at 0.0.0.0:33221
+2022-06-05 18:51:13,859 INFO  akka.remote.RemoteActorRefProvider$RemotingTerminator        [] - Shutting down remote daemon.
+2022-06-05 18:51:13,869 INFO  akka.remote.RemoteActorRefProvider$RemotingTerminator        [] - Remote daemon shut down; proceeding with flushing remote transports.
+2022-06-05 18:51:13,903 INFO  akka.remote.RemoteActorRefProvider$RemotingTerminator        [] - Remoting shut down.
+2022-06-05 18:51:13,904 INFO  akka.remote.RemoteActorRefProvider$RemotingTerminator        [] - Remoting shut down.

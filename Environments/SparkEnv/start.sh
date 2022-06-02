@@ -1,0 +1,14 @@
+spark/bin/spark-submit --class WordCount --master spark://$(hostname):7077 --num-executors 1 --executor-memory 3g /apps/spark-word-count_2.12-1.0.jar 8
+spark/bin/spark-submit --class WordCount --master spark://$(hostname):7077 --num-executors 1 --executor-memory 3g /apps/spark-word-count_2.12-1.0.jar 8
+spark/bin/spark-submit --class WordCount --master spark://$(hostname):7077 --num-executors 1 --executor-memory 3g /apps/spark-word-count_2.12-1.0.jar 8
+spark/bin/spark-submit --class WordCount --master spark://$(hostname):7077 --num-executors 1 --executor-memory 3g /apps/spark-word-count_2.12-1.0.jar 8
+spark/bin/spark-submit --class WordCount --master spark://$(hostname):7077 --num-executors 1 --executor-memory 3g /apps/spark-word-count_2.12-1.0.jar 8
+spark/bin/spark-submit --class WordCount --master spark://$(hostname):7077 --num-executors 1 --executor-memory 3g /apps/spark-word-count_2.12-1.0.jar 8
+spark/bin/spark-submit --class WordCount --master spark://$(hostname):7077 --num-executors 1 --executor-memory 3g /apps/spark-word-count_2.12-1.0.jar 8
+spark/bin/spark-submit --class WordCount --master spark://$(hostname):7077 --num-executors 1 --executor-memory 3g /apps/spark-word-count_2.12-1.0.jar 8
+spark/bin/spark-submit --class WordCount --master spark://$(hostname):7077 --num-executors 1 --executor-memory 3g /apps/spark-word-count_2.12-1.0.jar 8
+spark/bin/spark-submit --class WordCount --master spark://$(hostname):7077 --num-executors 1 --executor-memory 3g /apps/spark-word-count_2.12-1.0.jar 8
+spark/bin/spark-submit --class WordCount --master spark://$(hostname):7077 --num-executors 1 --executor-memory 3g /apps/spark-word-count_2.12-1.0.jar 8
+spark/bin/spark-submit --class WordCount --master spark://$(hostname):7077 --num-executors 1 --executor-memory 3g /apps/spark-word-count_2.12-1.0.jar 8
+spark/bin/spark-submit --class WordCount --master spark://$(hostname):7077 --num-executors 1 --executor-memory 3g /apps/spark-word-count_2.12-1.0.jar 8
+spark/bin/spark-submit --class WordCount --master spark://$(hostname):7077 --num-executors 1 --executor-memory 3g /apps/spark-word-count_2.12-1.0.jar 8

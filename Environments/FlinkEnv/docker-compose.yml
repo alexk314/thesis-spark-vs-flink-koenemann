@@ -1,0 +1,161 @@
+version: '3'
+
+services:
+  flink-jobmanager:
+    image: flink:latest
+    volumes:
+      - ./input_data:/opt/flink/input_data
+      - ./my_apps:/opt/flink/my_apps
+      - ./start.sh:/opt/flink/start.sh
+      - ./start1.sh:/opt/flink/start1.sh
+    container_name: flink-jobmanager
+    hostname: flink-jobmanager
+    network_mode: host
+    ports:
+      - "8081:8081"
+    command: jobmanager
+    environment:
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: 192.168.178.56
+        jobmanager.memory.process.size: 6000m
+        parallelism.default: 1
+    extra_hosts:
+      - "flink-jobmanager:192.168.178.56" # MiniPc Master 
+      - "flink-worker-surface:192.168.178.57"
+      - "flink-worker-surface-II:192.168.178.60"
+      - "flink-worker-pi:192.168.178.55" 
+      - "flink-worker-pi4:192.168.178.58" 
+      - "flink-worker-pi4-II:192.168.178.59" 
+  flink-worker-surface:
+    image: flink:latest
+    volumes:
+      - ./input_data:/opt/flink/input_data
+    container_name: flink-worker-surface
+    hostname: flink-worker-surface
+    network_mode: host
+    command: taskmanager
+    environment:
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: 192.168.178.56
+        taskmanager.numberOfTaskSlots: 1        
+        taskmanager.host: 192.168.178.57
+        taskmanager.memory.process.size: 8000m
+    extra_hosts:
+      - "flink-jobmanager:192.168.178.56" # MiniPc Master 
+      - "flink-worker-surface:192.168.178.57"
+      - "flink-worker-surface-II:192.168.178.60"
+      - "flink-worker-pi:192.168.178.55" 
+      - "flink-worker-pi4:192.168.178.58" 
+      - "flink-worker-pi4-II:192.168.178.59" 
+  flink-worker-surface-II:
+    image: flink:latest
+    volumes:
+      - ./input_data:/opt/flink/input_data
+    container_name: flink-worker-surface-II
+    hostname: flink-worker-surface-II
+    network_mode: host
+    command: taskmanager
+    environment:
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: 192.168.178.56
+        taskmanager.numberOfTaskSlots: 1        
+        taskmanager.host: 192.168.178.60
+        taskmanager.memory.process.size: 6500m
+    extra_hosts:
+      - "flink-jobmanager:192.168.178.56" # MiniPc Master 
+      - "flink-worker-surface:192.168.178.57"
+      - "flink-worker-surface-II:192.168.178.60"
+      - "flink-worker-pi:192.168.178.55" 
+      - "flink-worker-pi4:192.168.178.58" 
+      - "flink-worker-pi4-II:192.168.178.59" 
+  flink-worker-pi3:
+    image: flink:latest
+    volumes:
+      - ./input_data:/opt/flink/input_data
+    container_name: flink-worker-pi3
+    hostname: flink-worker-pi3
+    network_mode: host
+    command: taskmanager
+    environment:
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: 192.168.178.56
+        taskmanager.numberOfTaskSlots: 1        
+        taskmanager.host: 192.168.178.55
+        taskmanager.memory.process.size: 1000m
+    extra_hosts:
+      - "flink-jobmanager:192.168.178.56" # MiniPc Master 
+      - "flink-worker-surface:192.168.178.57"
+      - "flink-worker-surface-II:192.168.178.60"
+      - "flink-worker-pi:192.168.178.55" 
+      - "flink-worker-pi4:192.168.178.58" 
+      - "flink-worker-pi4-II:192.168.178.59" 
+  flink-worker-pi4:
+    image: flink:latest
+    volumes:
+      - ./input_data:/opt/flink/input_data
+    container_name: flink-worker-pi4
+    hostname: flink-worker-pi4
+    network_mode: host
+    command: taskmanager
+    environment:
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: 192.168.178.56
+        taskmanager.numberOfTaskSlots: 1        
+        taskmanager.host: 192.168.178.58
+        taskmanager.memory.process.size: 3000m
+    extra_hosts:
+      - "flink-jobmanager:192.168.178.56" # MiniPc Master 
+      - "flink-worker-surface:192.168.178.57"
+      - "flink-worker-surface-II:192.168.178.60"
+      - "flink-worker-pi:192.168.178.55" 
+      - "flink-worker-pi4:192.168.178.58" 
+      - "flink-worker-pi4-II:192.168.178.59" 
+  flink-worker-pi4-II:
+    image: flink:1.14.4-scala_2.12
+    volumes:
+      - ./input_data:/opt/flink/input_data
+    container_name: flink-worker-pi4-II
+    hostname: flink-worker-pi4-II
+    network_mode: host
+    command: taskmanager
+    environment:
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: 192.168.178.56
+        taskmanager.numberOfTaskSlots: 1        
+        taskmanager.host: 192.168.178.59
+        taskmanager.memory.process.size: 8000m
+    extra_hosts:
+      - "flink-jobmanager:192.168.178.56" # MiniPc Master 
+      - "flink-worker-surface:192.168.178.57"
+      - "flink-worker-surface-II:192.168.178.60"
+      - "flink-worker-pi:192.168.178.55" 
+      - "flink-worker-pi4:192.168.178.58" 
+      - "flink-worker-pi4-II:192.168.178.59" 
+  flink-worker-minis:
+    image: flink:latest
+    depends_on:
+      - flink-jobmanager
+    container_name: flink-worker-minis
+    hostname: flink-worker-minis
+    network_mode: host
+    command: taskmanager
+    #scale: 1
+    environment:
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: flink-jobmanager
+        taskmanager.numberOfTaskSlots: 1        
+        taskmanager.host: 192.168.178.56
+    extra_hosts:
+      - "flink-jobmanager:192.168.178.56" # MiniPc Master 
+      - "flink-worker-surface:192.168.178.57"
+      - "flink-worker-surface-II:192.168.178.60"
+      - "flink-worker-pi:192.168.178.55" 
+      - "flink-worker-pi4:192.168.178.58" 
+      - "flink-worker-pi4-II:192.168.178.59" 

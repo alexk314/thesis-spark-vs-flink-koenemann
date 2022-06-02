@@ -1,0 +1,137 @@
+version: '3'
+
+services:
+  spark-master:
+    image: pipi/spark:latest
+    container_name: spark-master
+    hostname: spark-master
+    network_mode: host
+    volumes:
+      - ./apps:/apps
+      - ./input_data:/input_data
+      - ./output_data:/output_data
+      - ./start.sh:/start.sh
+    environment:
+      - SPARK_WORKLOAD=master
+      - SPARK_LOCAL_IP=spark-master
+    extra_hosts:
+      - "spark-master:192.168.178.56" # MiniPc Master 
+      - "spark-worker-surface:192.168.178.57"
+      - "spark-worker-surface-II:192.168.178.60"
+      - "spark-worker-pi:192.168.178.55" 
+      - "spark-worker-pi4:192.168.178.58" 
+      - "spark-worker-pi4-II:192.168.178.59" 
+  spark-worker-surface:
+    image: pipi/spark:latest
+    container_name: spark-worker-surface
+    hostname: spark-worker-surface
+    network_mode: host
+    depends_on: 
+      - spark-master
+    environment:
+      - SPARK_WORKLOAD=worker
+      - SPARK_MASTER=192.168.178.56:7077 #Minis Master!
+      - SPARK_WORKER_CORES=4
+      - SPARK_WORKER_MEMORY=5G
+      - SPARK_LOCAL_IP=spark-worker-surface 
+    volumes:
+    - ./apps:/apps
+    - ./input_data:/input_data
+    - ./output_data:/output_data
+    extra_hosts:
+    - "spark-master:192.168.178.56" # MiniPc Master 
+    - "spark-worker-surface:192.168.178.57"
+    - "spark-worker-surface-II:192.168.178.60"
+    - "spark-worker-pi:192.168.178.55" 
+    - "spark-worker-pi4:192.168.178.58" 
+    - "spark-worker-pi4-II:192.168.178.59" 
+  spark-worker-surface-II:
+    image: pipi/spark:latest
+    container_name: spark-worker-surface-II
+    hostname: spark-worker-surface-II
+    network_mode: host
+    depends_on: 
+      - spark-master
+    environment:
+      - SPARK_WORKLOAD=worker
+      - SPARK_MASTER=192.168.178.56:7077 #Minis Master!
+      - SPARK_WORKER_CORES=4
+      - SPARK_WORKER_MEMORY=5G
+      - SPARK_LOCAL_IP=spark-worker-surface-II
+    volumes:
+    - ./apps:/apps
+    - ./input_data:/input_data
+    - ./output_data:/output_data
+    extra_hosts:
+    - "spark-master:192.168.178.56" # MiniPc Master 
+    - "spark-worker-surface:192.168.178.57"
+    - "spark-worker-surface-II:192.168.178.60"
+    - "spark-worker-pi:192.168.178.55" 
+    - "spark-worker-pi4:192.168.178.58" 
+    - "spark-worker-pi4-II:192.168.178.59" 
+  spark-worker-pi:
+    image: pipi/spark:latest
+    container_name: spark-worker-pi
+    hostname: spark-worker-pi
+    network_mode: host
+    environment:
+      - SPARK_WORKLOAD=worker
+      - SPARK_MASTER=192.168.178.56:7077 #Minis Master!
+      - SPARK_WORKER_CORES=4
+      - SPARK_WORKER_MEMORY=500M
+      - SPARK_LOCAL_IP=spark-worker-pi
+    volumes:
+    - ./apps:/apps
+    - ./input_data:/input_data
+    - ./output_data:/output_data
+    extra_hosts:
+    - "spark-master:192.168.178.56" # MiniPc Master 
+    - "spark-worker-surface:192.168.178.57"
+    - "spark-worker-surface-II:192.168.178.60"
+    - "spark-worker-pi:192.168.178.55" 
+    - "spark-worker-pi4:192.168.178.58" 
+    - "spark-worker-pi4-II:192.168.178.59" 
+  spark-worker-pi4:
+    image: pipi/spark:latest
+    container_name: spark-worker-pi4
+    hostname: spark-worker-pi4
+    network_mode: host
+    environment:
+      - SPARK_WORKLOAD=worker
+      - SPARK_MASTER=192.168.178.56:7077 #Minis Master!
+      - SPARK_WORKER_CORES=4
+      - SPARK_WORKER_MEMORY=3G
+      - SPARK_LOCAL_IP=spark-worker-pi4
+    volumes:
+    - ./apps:/apps
+    - ./input_data:/input_data
+    - ./output_data:/output_data
+    extra_hosts:
+    - "spark-master:192.168.178.56" # MiniPc Master 
+    - "spark-worker-surface:192.168.178.57"
+    - "spark-worker-surface-II:192.168.178.60"
+    - "spark-worker-pi:192.168.178.55" 
+    - "spark-worker-pi4:192.168.178.58" 
+    - "spark-worker-pi4-II:192.168.178.59" 
+  spark-worker-pi4-II:
+    image: pipi/spark:latest
+    container_name: spark-worker-pi4-II
+    hostname: spark-worker-pi4-II
+    network_mode: host
+    environment:
+      - SPARK_WORKLOAD=worker
+      - SPARK_MASTER=192.168.178.56:7077 #Minis Master!
+      - SPARK_WORKER_CORES=4
+      - SPARK_WORKER_MEMORY=3G
+      - SPARK_LOCAL_IP=spark-worker-pi4-II
+    volumes:
+    - ./apps:/apps
+    - ./input_data:/input_data
+    - ./output_data:/output_data
+    extra_hosts:
+    - "spark-master:192.168.178.56" # MiniPc Master 
+    - "spark-worker-surface:192.168.178.57"
+    - "spark-worker-surface-II:192.168.178.60"
+    - "spark-worker-pi:192.168.178.55" 
+    - "spark-worker-pi4:192.168.178.58" 
+    - "spark-worker-pi4-II:192.168.178.59" 
