@@ -1,4 +1,4 @@
-# Thesis Spark vs. FLink on heterogeneous hardware
+# Thesis Spark vs. Flink on heterogeneous hardware
 ## Documenation
 See thesis_spark_vs_flink.pdf
 
